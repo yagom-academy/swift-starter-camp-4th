@@ -32,3 +32,8 @@ func makeIceCreamBar(frontSpace: Int, row: Int) {
         print("| |")
     }
 }
+
+
+// 함수 실행
+makeTopOfIceCream(width: 11, height: 8)
+makeIceCreamBar(frontSpace: 4, row: 4)
