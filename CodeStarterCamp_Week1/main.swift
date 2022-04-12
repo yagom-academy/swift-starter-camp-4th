@@ -8,18 +8,18 @@
 
 import Foundation
 
-func print_icecream() {
+func printIcecream() {
     for count in 1...8 {
         print("***********")
     }
 }
 
-func print_bar() {
+func printIcecreamStick() {
     for count in 1...4 {
         print("    | |")
     }
     
 }
 
-print_icecream()
-print_bar()
+printIcecream()
+printIcecreamStick()
