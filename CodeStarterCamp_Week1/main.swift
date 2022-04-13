@@ -12,7 +12,7 @@ let hight = 12
 let width = 11
 let halfWidth = (width/2)+1
 
-func printIceCream(widthCount: Int){
+func printIceCream(){
     print("*", terminator: "")
 }
 
@@ -28,7 +28,7 @@ func printStick(widthCount: Int){
 for hightCount in 1...hight{
     for widthCount in 1...width{
         if hightCount < 9 {
-            printIceCream(widthCount: widthCount)
+            printIceCream()
         }
         else{
             printStick(widthCount: widthCount)
