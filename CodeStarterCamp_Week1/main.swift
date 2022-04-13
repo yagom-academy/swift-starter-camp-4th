@@ -16,8 +16,8 @@ func printIceCream() {
     print("*", terminator: "")
 }
 
-func printStick(widthPoint: Int) {
-    if widthPoint == halfWidth-1 || widthPoint == halfWidth+1 {
+func printStick(_ widthCount: Int) {
+    if widthCount == halfWidth-1 || widthCount == halfWidth+1 {
         print("|", terminator: "")
     }else {
         print(" ", terminator: "")
@@ -29,7 +29,7 @@ for hightCount in 1...hight {
         if hightCount < 9 {
             printIceCream()
         }else {
-            printStick(widthPoint: widthCount)
+            printStick(widthCount)
         }
     }
     print("")
