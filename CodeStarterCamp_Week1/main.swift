@@ -8,3 +8,11 @@ func drawIcecream() {
         print("")
     }
 }
+
+drawIcecream()
+
+func drawIcecreamSticks() {
+    for sticks in 1...4 {
+        print("    | |    ")
+    }
+}
