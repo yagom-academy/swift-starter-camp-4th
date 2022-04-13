@@ -1,12 +1,6 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
-
 import Foundation
 
-print("Hello, World!")
+for stars in 0...10 {
+    print("*", terminator: "")
+}
 
