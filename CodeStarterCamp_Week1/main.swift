@@ -1,6 +1,10 @@
 import Foundation
 
-for stars in 0...10 {
-    print("*", terminator: "")
+func drawIcecream() {
+    for heightStars in 1...8 {
+        for widthStars in 1...11 {
+            print("*", terminator: "")
+        }
+        print("")
+    }
 }
-
