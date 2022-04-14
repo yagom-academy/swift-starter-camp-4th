@@ -6,7 +6,20 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
+func makeIceCreamBody() {
+    for countLength in 1 ... 8 {
+        for countWidth in 1 ... 11 {
+            print("*", separator: "", terminator: "")
+        }
+        print("")
+    }
+}
 
-print("Hello, World!")
+func makeIceCreamBar() {
+    for countBar in 1 ... 4 {
+        print("    | |")
+    }
+}
 
+makeIceCreamBody()
+makeIceCreamBar()
