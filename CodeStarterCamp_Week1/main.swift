@@ -8,8 +8,8 @@
 
 import Foundation
 
-func drawIcecream(width: Int, height:Int) {
-    let totalCnt:Int = width * height
+func drawIcecream(width: Int, height: Int) {
+    let totalCnt: Int = width * height
     
     for i in 1 ... totalCnt {
         print("*", terminator: "")
