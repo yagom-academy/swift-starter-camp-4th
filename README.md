@@ -20,6 +20,7 @@
     복잡해질 것 같아 위와같이 출력하였습니다
     
 
-![순서도](./순서도.png)
+<img width="141" alt="순서도" src="https://user-images.githubusercontent.com/97817208/163376542-0d7d2096-5d30-495c-a041-2b26d1839430.png">
+
     
     
