@@ -20,4 +20,5 @@ func drawIcecream(forwidth width: Int, forheight height: Int, forStickHeight sti
     }
 }
 
-drawIcecream(forwidth: 20, forheight: 10, forStickHeight: 5)
+drawIcecream(forWidth: 20, forHeight: 10, forStickHeight: 5)
+
