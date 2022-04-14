@@ -8,5 +8,25 @@
 
 import Foundation
 
-print("Hello, World!")
+func drawIceCream() {
+    let widthOfIceCream = 11
+    
+    for iceCreamHeight in 1...8 {
+        for _ in 1...widthOfIceCream {
+            print("*", terminator: "")
+        }
+        print()
+    }
+}
 
+func drawIceCreamStick() {
+    for stickHeight in 1...4 {
+        for spaceWidth in 1...4 {
+            print(" ", terminator: "")
+        }
+        print("| |")
+    }
+}
+
+drawIceCream()
+drawIceCreamStick()
