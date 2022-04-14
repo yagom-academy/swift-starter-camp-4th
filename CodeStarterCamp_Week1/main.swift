@@ -17,12 +17,10 @@ func drawIcecream(width: Int, height:Int) {
         if i % width == 0 {
             print("")
         }
-        
     }
 }
 
 func drawStick(width: Int, height:Int) {
-    
     let widthOddEven:Int = width % 2
     let blankCnt:Int = (width / 2) - 1
     
@@ -34,8 +32,6 @@ func drawStick(width: Int, height:Int) {
             print("|" , "|",separator: " ")
         }
     }
-    
-   
 }
 
 
