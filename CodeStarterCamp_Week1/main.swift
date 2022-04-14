@@ -23,7 +23,6 @@ func drawIcecreamBar(width: Int, Height: Int) {
         for _ in 1...barLeftSpace {
             print(" ", terminator: "")
         }
-        // 너비의 길이가 짝수, 홀수 일 때 에 따라 막대의 모양을 바꿨습니다.
         if width % 2 == 0 {
             print("||")
         } else {
