@@ -10,21 +10,17 @@ import Foundation
 
 
 //MARK: 아이스크림 그리기
-func DrawIceCream() {
+func drawIceCream() {
     for _ in 1...8 {
         for _ in 1...11 {
             print("*", terminator: "")
-            }
-        print()
+        }
+    print()
     }
-}
-
-//MARK: 아이스바 그리기
-func DrawIceBar() {
     for _ in 1...4 {
         print("    | |")
     }
 }
 
-DrawIceCream()
-DrawIceBar()
+
+drawIceCream()
