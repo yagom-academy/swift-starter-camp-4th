@@ -1,19 +1,23 @@
 import Foundation
 
-func drawIcecream(forwidth width: Int, forheight height: Int) {
-    for heightStars in 1...height {
-        for widthStars in 1...width {
+func drawIcecream(forwidth width: Int, forheight height: Int, forStickHeight stickHeight: Int) {
+    for _ in 1...height {
+        for _ in 1...width {
             print("*", terminator: "")
+        }
+        print("")
+    }
+    
+    for _ in 1...stickHeight {
+        for _ in 1...((width-3)/2) {
+            print(" ", terminator: "")
+        }
+        print("| |", terminator: "")
+        for _ in 1...((width-3)/2) {
+            print(" ", terminator: "")
         }
         print("")
     }
 }
 
-func drawIcecreamSticks(for stickHeight: Int) {
-    for sticks in 1...stickHeight {
-        print("    | |    ")
-    }
-}
-
-drawIcecream(forwidth: 25, forheight: 5)
-drawIcecreamSticks(for: 5)
+drawIcecream(forwidth: 20, forheight: 10, forStickHeight: 5)
