@@ -8,8 +8,8 @@
 
 import Foundation
 
-func drawIcecream(width: Int, Height: Int) {
-    for _ in 1...Height {
+func drawIcecream(width: Int, height: Int) {
+    for _ in 1...height {
         for _ in 1...width {
             print("*", terminator: "")
         }
@@ -17,13 +17,12 @@ func drawIcecream(width: Int, Height: Int) {
     }
 }
 
-func drawIcecreamBar(width: Int, Height: Int) {
-    for _ in 1...Height {
+func drawIcecreamBar(width: Int, height: Int) {
+    for _ in 1...height {
         let barLeftSpace = width/2 - 1
         for _ in 1...barLeftSpace {
             print(" ", terminator: "")
         }
-        // 너비의 길이가 짝수, 홀수 일 때 에 따라 막대의 모양을 바꿨습니다.
         if width % 2 == 0 {
             print("||")
         } else {
@@ -32,9 +31,9 @@ func drawIcecreamBar(width: Int, Height: Int) {
     }
 }
 
-drawIcecream(width: 11, Height: 8)
-drawIcecreamBar(width: 11, Height: 4)
+drawIcecream(width: 11, height: 8)
+drawIcecreamBar(width: 11, height: 4)
 print("")
-drawIcecream(width: 10, Height: 8)
-drawIcecreamBar(width: 10, Height: 4)
+drawIcecream(width: 10, height: 8)
+drawIcecreamBar(width: 10, height: 4)
 
