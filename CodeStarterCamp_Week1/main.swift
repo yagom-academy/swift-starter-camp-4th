@@ -8,5 +8,15 @@
 
 import Foundation
 
-print("Hello, World!")
 
+var star : String = ""
+for _ in 1...11 {
+    star += "*"
+}
+for _ in 1...8 {
+    print(star)
+}
+for _ in 1...4 {
+    let iceBar = "    | |     "
+    print(iceBar)
+}
