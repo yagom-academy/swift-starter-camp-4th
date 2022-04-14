@@ -17,4 +17,10 @@
     stick의 높이(stick_height)를 입력받은 높이만큼 print("    | |")를 출력해주었습니다.
     
     stick을 그릴 때 4칸의 빈칸 후에 "| |"가 오는 것을 보고 drawice 함수처럼 이중 for문을 할까 했지만
-    복잡해질 것 같아 위와같이 출력하였습니다.
+    복잡해질 것 같아 위와같이 출력하였습니다
+    
+
+<img width="141" alt="순서도" src="https://user-images.githubusercontent.com/97817208/163376542-0d7d2096-5d30-495c-a041-2b26d1839430.png">
+
+    
+    
