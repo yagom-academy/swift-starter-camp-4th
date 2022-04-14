@@ -8,20 +8,23 @@
 
 import Foundation
 
-func drawice(ice_height:Int){
-    for i in 1...ice_height{
+func drawIce(height:Int){
+    for _ in 1...height{
         for _ in 1...11{
             print("*",terminator: "")
         }
         print()
     }
 }
-func drawstick(stick_height:Int){
-    for i in 1...stick_height{
+func drawStick(height:Int){
+    for _ in 1...height{
         print("    | |")
     }
 }
-drawice(ice_height: 8)
-drawstick(stick_height:4)
 
+func drawIceCream(iceHeight : Int, stickHeight : Int){
+    drawIce(height : iceHeight)
+    drawStick(height: stickHeight)
+}
 
+drawIceCream(iceHeight: 8, stickHeight: 4)
