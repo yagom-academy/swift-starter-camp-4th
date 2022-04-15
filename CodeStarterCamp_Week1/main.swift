@@ -7,19 +7,18 @@
 //
 
 
-func makeIce() {
+func makeIceCream() {
     let iceLayer = "**********"
     for _ in 0...7 { print(iceLayer)}
 }
 
-func makeBar() {
+func makeIceCreamBar() {
     let barLayer = "   | |   "
     for _ in 0...3 { print(barLayer)}
 }
 
-makeIce()
-makeBar()
-
+makeIceCream()
+makeIceCreamBar()
 // 두가지 함수를 한번에 호출하는 함수
 //func makeWholeIceCream() {
 //    makeIce()
