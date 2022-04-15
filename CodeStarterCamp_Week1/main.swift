@@ -8,5 +8,19 @@
 
 import Foundation
 
-print("Hello, World!")
 
+//MARK: 아이스크림 그리기
+func drawIceCream() {
+    for _ in 1...8 {
+        for _ in 1...11 {
+            print("*", terminator: "")
+        }
+    print()
+    }
+    for _ in 1...4 {
+        print("    | |")
+    }
+}
+
+
+drawIceCream()
