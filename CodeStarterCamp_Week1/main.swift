@@ -8,5 +8,12 @@
 
 import Foundation
 
-print("Hello, World!")
+func makeIceCreambody(){
+    for _ in 1...8{
+        for _ in 1...11{
+            print("*", terminator: "")
+        }
+        print("")
+    }
+}
 
