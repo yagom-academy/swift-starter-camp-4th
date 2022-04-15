@@ -9,7 +9,7 @@
 import Foundation
 
 func printPStick(_ stickLength: Int) {
-    for _ in 1...stickLength {
+    for lengthCount in 1...stickLength {
         print(" | | ")
     }
 }
