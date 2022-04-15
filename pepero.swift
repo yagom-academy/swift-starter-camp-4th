@@ -14,3 +14,10 @@ func printPStick(_ stickLength: Int) {
     }
 }
 
+func addToppingToBody(body: String, topping: String) {
+    if topping.isEmpty {
+        print(" \(body) ")
+    } else {
+        print(topping+body)
+    }
+}
