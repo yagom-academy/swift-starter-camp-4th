@@ -14,7 +14,7 @@ func printPStick(_ stickLength: Int) {
     }
 }
 
-func addToppingToBody(body: String, topping: String, _ lengthCount: Int) {
+func addToppingToBody(_ body: String, _ topping: String, _ lengthCount: Int) {
     if topping.isEmpty {
         print(" \(body) ")
     } else {
@@ -26,9 +26,14 @@ func addToppingToBody(body: String, topping: String, _ lengthCount: Int) {
     }
 }
 
-func printPeperoBody(bodyLength: Int) {
+func printPeperoBody(_ bodyLength: Int, _ body: String, _ topping: String) {
     for lengthCount in 1...bodyLength {
-        addToppingToBody(body: "***", topping: "&", lengthCount)
+        addToppingToBody(body, topping, lengthCount)
     }
 }
 
+func printPeperoOnOrder(bodyLength: Int, body: String, topping: String, stickLength: Int) {
+    printPeperoBody(bodyLength, body, topping)
+    printPStick(stickLength)
+    print("")
+}

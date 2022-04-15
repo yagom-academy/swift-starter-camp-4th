@@ -34,5 +34,9 @@ for hightCount in 1...hight {
     }
     print("")
 }
-printPeperoBody(bodyLength: 8)
-printPStick(4)
+
+printPeperoOnOrder(bodyLength: 10, body: "***", topping: "", stickLength: 4)
+printPeperoOnOrder(bodyLength: 12, body: "***", topping: "&", stickLength: 4)
+printPeperoOnOrder(bodyLength: 12, body: "***", topping: "#", stickLength: 6)
+printPeperoOnOrder(bodyLength: 6, body: "|0|", topping: "", stickLength: 4)
+
