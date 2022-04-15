@@ -10,8 +10,9 @@ import Foundation
 
 func drawIceCream() {
     let widthOfIceCream = 11
+    let iceCreamHeight = 8
     
-    for iceCreamHeight in 1...8 {
+    for _ in 1...iceCreamHeight {
         for _ in 1...widthOfIceCream {
             print("*", terminator: "")
         }
@@ -20,8 +21,11 @@ func drawIceCream() {
 }
 
 func drawIceCreamStick() {
-    for stickHeight in 1...4 {
-        for spaceWidth in 1...4 {
+    let stickHeight = 4
+    let spaceWidth = 4
+    
+    for _ in 1...stickHeight {
+        for _ in 1...spaceWidth {
             print(" ", terminator: "")
         }
         print("| |")
