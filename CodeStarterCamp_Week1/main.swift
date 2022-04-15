@@ -8,7 +8,7 @@
 
 import Foundation
 
-func makeIceCreambody(){
+func makeIcecreamBody(){
     for _ in 1...8{
         for _ in 1...11{
             print("*", terminator: "")
@@ -16,4 +16,16 @@ func makeIceCreambody(){
         print("")
     }
 }
+
+func makeIcecreamBar(){
+    for _ in 1...4{
+        for _ in 1...4{
+            print(" ", terminator: "")
+        }
+        print("| |")
+    }
+}
+
+makeIcecreamBody()
+makeIcecreamBar()
 
