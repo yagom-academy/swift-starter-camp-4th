@@ -8,20 +8,15 @@
 
 import Foundation
 
-//아이스크림 만들기
-func makeIceCream () {
-    for layer in 1...8 {
+
+func makeIceCream(iceCreamLayer: Int, iceCreamBarLayer: Int) {
+    for _ in 1...iceCreamLayer {
         print("***********")
     }
-}
-
-//막대기 만들기
-func makeIceCreamBar () {
-    for layer in 1...4 {
+    for _ in 1...iceCreamBarLayer {
         print("    | |")
     }
 }
 
-//아이스크림 만들기 실행
-makeIceCream()
-makeIceCreamBar()
+
+makeIceCream(iceCreamLayer: 8, iceCreamBarLayer: 4)
