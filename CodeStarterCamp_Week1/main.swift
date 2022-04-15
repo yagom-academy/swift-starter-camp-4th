@@ -35,3 +35,4 @@ for hightCount in 1...hight {
     print("")
 }
 
+printPStick(4)
