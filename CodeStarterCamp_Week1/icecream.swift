@@ -7,15 +7,15 @@
 
 import Foundation
 
-func iceCream(ice: Int) {
-    for _ in 1...ice {
+func MakeIcecream(height: Int) {
+    for _ in 1...height {
         print("**************")
     }
 }
-func woodBar(bar: Int) {
-    for _ in 1...bar {
+func MakeBar(width: Int) {
+    for _ in 1...width {
         print("     |   |    ")
     }
 }
-iceCream(ice: 11)
-woodBar(bar: 4)
+MakeIcecream(height: 11)
+MakeBar(width: 4)
