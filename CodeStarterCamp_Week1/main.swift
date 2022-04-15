@@ -31,7 +31,7 @@ makeIcecreamBar()
 
 func makeGugudan(xdan: Int){
     for i in 1...9{
-        print("\(xdan)x\(i)=\(xdan*i)")
+        print(" \(xdan) x \(i) = \(xdan * i)")
     }
 }
 
