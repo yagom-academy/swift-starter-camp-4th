@@ -33,7 +33,20 @@ func printPeperoBody(_ bodyLength: Int, _ body: String, _ topping: String) {
 }
 
 func printPeperoOnOrder(bodyLength: Int, body: String, topping: String, stickLength: Int) {
+    printPeperoInfo(bodyLength, body, topping, stickLength)
     printPeperoBody(bodyLength, body, topping)
     printPStick(stickLength)
     print("")
+}
+
+func printPeperoInfo(_ bodyLength: Int, _ body: String, _ topping: String, _ stickLength: Int) {
+    let peperoInfo = """
+<정보>
+길이: \(bodyLength)
+몸통: \(body)
+토핑: \(topping)
+막대길이: \(stickLength)
+
+"""
+    print(peperoInfo)
 }
