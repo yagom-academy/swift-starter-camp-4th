@@ -34,5 +34,5 @@ for hightCount in 1...hight {
     }
     print("")
 }
-addToppingToBody(body: "***", topping: "&")
+printPeperoBody(bodyLength: 8)
 printPStick(4)

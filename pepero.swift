@@ -14,10 +14,21 @@ func printPStick(_ stickLength: Int) {
     }
 }
 
-func addToppingToBody(body: String, topping: String) {
+func addToppingToBody(body: String, topping: String, _ lengthCount: Int) {
     if topping.isEmpty {
         print(" \(body) ")
     } else {
-        print(topping+body)
+        if lengthCount % 2 == 0 {
+            print(" \(body)\(topping)")
+        } else {
+            print("\(topping)\(body)")
+        }
     }
 }
+
+func printPeperoBody(bodyLength: Int) {
+    for lengthCount in 1...bodyLength {
+        addToppingToBody(body: "***", topping: "&", lengthCount)
+    }
+}
+
