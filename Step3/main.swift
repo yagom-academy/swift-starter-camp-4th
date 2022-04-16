@@ -32,8 +32,8 @@ func printPeperoBody(length: Int) {
         else {
             print(" " + String(peperoBody.reversed()))
         }
-            
-}
+        
+    }
 }
 
 func printPepero(peperoBodyLength: Int, peperoBody: String, topping: String, peperoStickLength: Int) {
