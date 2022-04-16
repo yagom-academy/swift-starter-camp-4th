@@ -26,16 +26,16 @@ func setPeperoBody(body: String, topping: String) {
 
 func printPeperoBody(length: Int) {
     for count in 1...length {
-        if count % 2 == 0 {
-            print(" " + String(peperoBody.reversed()))
-        }
-        else {
+        if peperoBody.hasPrefix(" ") || count % 2 != 0 {
             print(peperoBody)
         }
-    }
+        else {
+            print(" " + String(peperoBody.reversed()))
+        }
+            
+}
 }
 
-//makePeperoBody(shape: "***", topping: "!")
 func printPepero(peperoBodyLength: Int, peperoBody: String, topping: String, peperoStickLength: Int) {
     print("<정보>")
     print("길이: \(peperoBodyLength)")
@@ -48,7 +48,7 @@ func printPepero(peperoBodyLength: Int, peperoBody: String, topping: String, pep
     printPeperoStick(length: peperoStickLength)
 }
 
-printPepero(peperoBodyLength: 6, peperoBody: "***", topping: "#", peperoStickLength: 4)
+printPepero(peperoBodyLength: 6, peperoBody: "***", topping: "!", peperoStickLength: 4)
 
 
 
