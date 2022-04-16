@@ -39,4 +39,4 @@ func makePepero(with bodyHeight: Int,using ingredient: String, topping: String, 
     makeStick(with: stickHeight)
 }
 
-makePepero(with: 6, using: "|0|", topping: " ", stickHeight: 4)
+makePepero(with: 12, using: "***", topping: "$", stickHeight: 6)

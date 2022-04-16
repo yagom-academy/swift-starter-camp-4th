@@ -16,3 +16,6 @@
 ## [STEP 2]
 ![ 순서도 사진 ](https://github.com/inho-98/swift_starter-week1/blob/ss_4_forinho/%EC%88%9C%EC%84%9C%EB%8F%84.drawio.jpg)
 
+
+## [STEP 3]
+![빼빼로 만들기 순서도]()
