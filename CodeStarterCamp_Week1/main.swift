@@ -1,17 +1,17 @@
-func drawIceCream (iceCream :String) {
+func drawIceCream(iceCream :String){
     for i in 0...7 {
         for j in 0...10 {
             print(iceCream,terminator: "")
         }
-        print("\n")
+        print("")
     }
 }
 
-func drawBar (bar :String){
-    for i in 0...3{
-        print("    \(bar) \(bar)")
+func drawIceCreamBar(iceCreamBar :String){
+    for i in 0...3 {
+        print("    \(iceCreamBar) \(iceCreamBar)")
     }
 }
 
 drawIceCream(iceCream: "*")
-drawBar(bar: "|")
+drawIceCreamBar(iceCreamBar: "|")
