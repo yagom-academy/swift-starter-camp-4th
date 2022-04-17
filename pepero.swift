@@ -16,7 +16,7 @@ func makePeperoStick(howLong stickLength: Int) {
     }
 }
 
-func makePeperoBodyMold(_ body: String, with topping: String, toppingPosition: Int) {
+func makePeperoBodyMold(_ topping: String, on body: String, toppingPosition: Int) {
     if topping.isEmpty {
         print(" \(body) ")
     } else {
@@ -28,15 +28,15 @@ func makePeperoBodyMold(_ body: String, with topping: String, toppingPosition: I
     }
 }
 
-func printPeperoBody(_ bodyLength: Int, _ body: String, _ topping: String) {
-    for lengthCount in 1...bodyLength {
-        makePeperoBodyMold(body, with: topping, toppingPosition: lengthCount%2)
+func makePeperoBody(_ topping: String, on body: String, howLong bodyLength: Int) {
+    for count in 1...bodyLength {
+        makePeperoBodyMold(topping, on: body, toppingPosition: count%2)
     }
 }
 
 func printPeperoOnOrder(bodyLength: Int, body: String, topping: String, stickLength: Int) {
     printPeperoInfo(bodyLength, body, topping, stickLength)
-    printPeperoBody(bodyLength, body, topping)
+    makePeperoBody(topping, on: body, howLong: bodyLength)
     makePeperoStick(howLong: stickLength)
     print("")
 }
