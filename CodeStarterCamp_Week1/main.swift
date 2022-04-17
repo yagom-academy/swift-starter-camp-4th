@@ -10,24 +10,26 @@ import Foundation
 
 // 아이스크림 몸통 만들기
 
-func makeIceCream (){
-    for _ in 1...8 {
-        for _ in 1...11 {
+func makeIceCream(width: Int, height: Int) {
+    for _ in 1...height {
+        for _ in 1...width {
             print("*", terminator: "")
         }
         print("")
     }
 }
 
+
 // 아이스크림 스틱 만들기
 
-func makeStick(){
-    for _ in 1...4 {
-        for _ in 1...4 {
-            print("", terminator: " ")
+func makeStick(width: Int, height: Int) {
+    for _ in 1...height {
+        for _ in 1...width {
+            print(" ", terminator: "")
         }
         print("| |")
     }
 }
-makeIceCream()
-makeStick()
+
+makeIceCream(width: 11, height: 8)
+makeStick(width: 4, height: 4)
