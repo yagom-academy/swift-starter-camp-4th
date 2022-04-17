@@ -21,10 +21,10 @@ for hightCount in 1...hight {
 }
 */
 
-printPeperoOnOrder(bodyLength: 10, body: "***", topping: "", stickLength: 4)
-printPeperoOnOrder(bodyLength: 12, body: "***", topping: "&", stickLength: 4)
-printPeperoOnOrder(bodyLength: 12, body: "***", topping: "#", stickLength: 6)
-printPeperoOnOrder(bodyLength: 6, body: "|0|", topping: "", stickLength: 4)
-printPeperoOnOrder(bodyLength: 2, body: "???", topping: "", stickLength: 1)
-printPeperoOnOrder(bodyLength: 10, body: "($)", topping: "!", stickLength: 5)
+printPeperoOnOrder(body: "***", topping: "", bodyLength: 10, stickLength: 4)
+printPeperoOnOrder(body: "***", topping: "&", bodyLength: 12, stickLength: 4)
+printPeperoOnOrder(body: "***", topping: "#", bodyLength: 12, stickLength: 6)
+printPeperoOnOrder(body: "|0|", topping: "", bodyLength: 6, stickLength: 4)
+printPeperoOnOrder(body: "???", topping: "", bodyLength: 2, stickLength: 1)
+printPeperoOnOrder(body: "($)", topping: "!", bodyLength: 10, stickLength: 5)
 

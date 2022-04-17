@@ -34,14 +34,14 @@ func makePeperoBody(_ topping: String, on body: String, howLong bodyLength: Int)
     }
 }
 
-func printPeperoOnOrder(bodyLength: Int, body: String, topping: String, stickLength: Int) {
-    printPeperoInfo(bodyLength, body, topping, stickLength)
+func printPeperoOnOrder(body: String, topping: String, bodyLength: Int, stickLength: Int) {
+    printInfo(body, topping, bodyLength, stickLength)
     makePeperoBody(topping, on: body, howLong: bodyLength)
     makePeperoStick(howLong: stickLength)
     print("")
 }
 
-func printPeperoInfo(_ bodyLength: Int, _ body: String, _ topping: String, _ stickLength: Int) {
+func printInfo(_ body: String, _ topping: String, _ bodyLength: Int, _ stickLength: Int) {
     let peperoInfo = """
 <정보>
 길이: \(bodyLength)
