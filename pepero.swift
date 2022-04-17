@@ -8,37 +8,47 @@
 
 import Foundation
 
-func makePeperoStick(howLong stickLength: Int) {
+func makePeperoStick(howLong stickLength: Int) -> String {
     var count = 1
+    var peperoStick = ""
     while count <= stickLength {
-        print(" | | ")
+        peperoStick.append(" | | \n")
         count += 1
     }
+    return peperoStick
 }
 
-func makePeperoBodyMold(_ topping: String, on body: String, toppingPosition: Int) {
+func makePeperoBodyMold(_ topping: String, on body: String, toppingPosition: Int) -> String {
+    var peperoBodyMold = ""
     if topping.isEmpty {
-        print(" \(body) ")
+        peperoBodyMold.append(" \(body) \n")
     } else {
         if toppingPosition == 0 {
-            print(" \(body)\(topping)")
+            peperoBodyMold.append(" \(body)\(topping)\n")
         } else {
-            print("\(topping)\(body)")
+            peperoBodyMold.append("\(topping)\(body) \n")
         }
     }
+    return peperoBodyMold
 }
 
-func makePeperoBody(_ topping: String, on body: String, howLong bodyLength: Int) {
+func makePeperoBody(_ topping: String, on body: String, howLong bodyLength: Int) -> String {
+    var peperoBody = ""
     for count in 1...bodyLength {
-        makePeperoBodyMold(topping, on: body, toppingPosition: count%2)
+        let peperoBodyMold = makePeperoBodyMold(topping, on: body, toppingPosition: count%2)
+        peperoBody.append(peperoBodyMold)
     }
+    return peperoBody
 }
 
 func printPeperoOnOrder(body: String, topping: String, bodyLength: Int, stickLength: Int) {
+    var pepero = ""
     printInfo(body, topping, bodyLength, stickLength)
-    makePeperoBody(topping, on: body, howLong: bodyLength)
-    makePeperoStick(howLong: stickLength)
-    print("")
+    let peperoBody = makePeperoBody(topping, on: body, howLong: bodyLength)
+    pepero.append(peperoBody)
+    let peperoStick = makePeperoStick(howLong: stickLength)
+    pepero.append(peperoStick)
+    print(pepero)
 }
 
 func printInfo(_ body: String, _ topping: String, _ bodyLength: Int, _ stickLength: Int) {
