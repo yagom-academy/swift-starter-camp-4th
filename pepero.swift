@@ -8,9 +8,11 @@
 
 import Foundation
 
-func printPStick(_ stickLength: Int) {
-    for lengthCount in 1...stickLength {
+func makePeperoStick(howLong stickLength: Int) {
+    var count = 1
+    while count <= stickLength {
         print(" | | ")
+        count += 1
     }
 }
 
@@ -35,7 +37,7 @@ func printPeperoBody(_ bodyLength: Int, _ body: String, _ topping: String) {
 func printPeperoOnOrder(bodyLength: Int, body: String, topping: String, stickLength: Int) {
     printPeperoInfo(bodyLength, body, topping, stickLength)
     printPeperoBody(bodyLength, body, topping)
-    printPStick(stickLength)
+    makePeperoStick(howLong: stickLength)
     print("")
 }
 
