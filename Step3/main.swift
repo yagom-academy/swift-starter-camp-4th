@@ -8,8 +8,8 @@ func printPeperoStick(peperoStickLength length: Int) {
     }
 }
 
-func makePeperoBody(peperoBodyShape shape: String, toppingShape topping: String) {
-    peperoBody = topping == "" ? " \(shape)" : "\(topping)\(shape)"
+func makePeperoBody(peperoBodyShape bodyShape: String, peperoToppingShape toppingShape: String) {
+    peperoBody = toppingShape == "" ? " \(bodyShape)" : "\(toppingShape)\(bodyShape)"
 }
 
 func printPeperoBody(peperoBodyLength length: Int) {
@@ -34,7 +34,7 @@ func printPepero(peperoBodyLength bodyLength: Int, peperoBodyShape bodyShape: St
           막대길이: \(stickLength)
           
           """)
-    makePeperoBody(peperoBodyShape: bodyShape, toppingShape: toppingShape)
+    makePeperoBody(peperoBodyShape: bodyShape, peperoToppingShape: toppingShape)
     printPeperoBody(peperoBodyLength: bodyLength)
     printPeperoStick(peperoStickLength: stickLength)
 }
