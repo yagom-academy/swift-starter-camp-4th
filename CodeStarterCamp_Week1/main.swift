@@ -8,18 +8,18 @@
 
 import Foundation
 
-func makeIcecreamBody(){
+func makeIcecreamBody() {
     for _ in 1...8{
-        for _ in 1...11{
+        for _ in 1...11 {
             print("*", terminator: "")
         }
         print("")
     }
 }
 
-func makeIcecreamBar(){
-    for _ in 1...4{
-        for _ in 1...4{
+func makeIcecreamBar() {
+    for _ in 1...4 {
+        for _ in 1...4 {
             print(" ", terminator: "")
         }
         print("| |")
@@ -29,9 +29,9 @@ func makeIcecreamBar(){
 makeIcecreamBody()
 makeIcecreamBar()
 
-func makeGugudan(xdan: Int){
-    for i in 1...9{
-        print(" \(xdan) x \(i) = \(xdan * i)")
+func makeGugudan(xdan: Int) {
+    for i in 1...9 {
+        print("\(xdan) x \(i) = \(xdan * i)")
     }
 }
 
