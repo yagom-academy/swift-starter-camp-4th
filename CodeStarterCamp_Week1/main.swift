@@ -8,22 +8,7 @@
 
 import Foundation
 
-let hight = 12
-let width = 11
-let halfWidth = (width/2)+1
-
-func printIceCream() {
-    print("*", terminator: "")
-}
-
-func printStick(_ widthCount: Int) {
-    if widthCount == halfWidth-1 || widthCount == halfWidth+1 {
-        print("|", terminator: "")
-    } else {
-        print(" ", terminator: "")
-    }
-}
-
+/* 아이스크림 출력 부분
 for hightCount in 1...hight {
     for widthCount in 1...width {
         if hightCount < 9 {
@@ -34,4 +19,12 @@ for hightCount in 1...hight {
     }
     print("")
 }
+*/
+
+printPeperoOnOrder(body: "***", topping: "", bodyLength: 10, stickLength: 4)
+printPeperoOnOrder(body: "***", topping: "&", bodyLength: 12, stickLength: 4)
+printPeperoOnOrder(body: "***", topping: "#", bodyLength: 12, stickLength: 6)
+printPeperoOnOrder(body: "|0|", topping: "", bodyLength: 6, stickLength: 4)
+printPeperoOnOrder(body: "???", topping: "", bodyLength: 2, stickLength: 1)
+printPeperoOnOrder(body: "($)", topping: "!", bodyLength: 10, stickLength: 5)
 
