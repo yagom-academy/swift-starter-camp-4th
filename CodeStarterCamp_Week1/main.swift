@@ -7,7 +7,6 @@
 
 import Foundation
 
-<<<<<<< HEAD
 func makePeperoStick(stickHeight: Int) {
     for _ in 1...stickHeight {
         print(" | | ")
