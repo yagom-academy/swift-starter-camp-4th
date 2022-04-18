@@ -9,37 +9,6 @@ import Foundation
 
 <<<<<<< HEAD
 func makePeperoStick(stickHeight: Int) {
-=======
-func drawIcecreamTop() {
-    for _ in 1...8 {
-        for _ in 1...11 {
-            print("*", terminator: "")
-        }
-        print("")
-    }
-}
-
-drawIcecreamTop()
-
-func drawIcecreamStick() {
-    for _ in 1...4 {
-        print("    ", terminator: "")
-        print("| |", terminator: "")
-        print("    ")
-    }
-}
-
-drawIcecreamStick()
-
-func drawIcecream(forwidth width: Int, forheight height: Int, forStickHeight stickHeight: Int) {
-    for _ in 1...height {
-        for _ in 1...width {
-            print("*", terminator: "")
-        }
-        print("")
-    }
-    
->>>>>>> 77e059d07987bd60af9d32cb5c804a0567c189cc
     for _ in 1...stickHeight {
         print(" | | ")
     }
@@ -55,8 +24,6 @@ func peperoBodyLength(bodyLength: Int, body: String, topping: String) {
         whatTypePepero(body: body, topping: topping)
     }
 }
-
-<<<<<<< HEAD
 func makePepero(bodyLength: Int, body: String, topping: String, stickHeight: Int) {
     peperoBodyLength(bodyLength: bodyLength, body: body, topping: topping)
     makePeperoStick(stickHeight: stickHeight)
@@ -87,6 +54,3 @@ print("")
 print("나만의 빼빼로")
 makePepero(bodyLength: 8, body: "|*|", topping: "$", stickHeight: 3)
 print("")
-=======
-drawIcecream(forWidth: 20, forHeight: 10, forStickHeight: 5)
->>>>>>> 77e059d07987bd60af9d32cb5c804a0567c189cc
