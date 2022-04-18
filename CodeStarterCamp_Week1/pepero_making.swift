@@ -10,9 +10,18 @@ import Foundation
 var peperobody: String = ""
 
 func makePeperoHeigth (peperoHeight: Int) {
-    for _ in 1...peperoHeight/2 {
+    if peperoHeight % 2 == 0 {
+        for _ in 1...peperoHeight/2 {
+            print(" " + peperobody)
+            print(" " + String(peperobody.reversed()))
+        }
+    }
+    else {
+        for _ in 1...peperoHeight/2 {
+            print(" " + peperobody)
+            print(" " + String(peperobody.reversed()))
+        }
         print(" " + peperobody)
-        print(" " + String(peperobody.reversed()))
     }
 }
 func makePepero (peperoMatiral: String, topping: String) {
@@ -31,6 +40,5 @@ func makeBar (barHeigth: Int) {
 }
 
 makePepero(peperoMatiral: "|0|", topping: "")
-makePeperoHeigth(peperoHeight: 6)
+makePeperoHeigth(peperoHeight: 7)
 makeBar(barHeigth: 4)
-
