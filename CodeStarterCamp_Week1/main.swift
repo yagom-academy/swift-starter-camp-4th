@@ -1,12 +1,17 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
+func drawIceCream(iceCream :String) {
+    for _ in 0...7 {
+        for _ in 0...10 {
+            print(iceCream,terminator: "")
+        }
+        print("")
+    }
+}
 
-import Foundation
+func drawIceCreamBar(iceCreamBar :String) {
+    for _ in 0...3 {
+        print("    \(iceCreamBar) \(iceCreamBar)")
+    }
+}
 
-print("Hello, World!")
-
+drawIceCream(iceCream: "*")
+drawIceCreamBar(iceCreamBar: "|")
