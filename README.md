@@ -17,6 +17,6 @@ SSD는 나의 체감이었는데 한국인들은 빨리빨리를 굉장히 좋�
 
 
 + week1 STEP3 순서도
-<img width=80% src="https://user-images.githubusercontent.com/82566116/163791627-2064a26b-f78c-426c-a62e-a63c9b8c6857.png">
+<img width=80% src="https://user-images.githubusercontent.com/82566116/163828946-2c03e42d-5d06-413b-9a73-d305a3f169e0.png">
 
 
