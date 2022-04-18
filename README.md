@@ -12,4 +12,11 @@ SSD는 나의 체감이었는데 한국인들은 빨리빨리를 굉장히 좋�
 주기억장치는 CPU가 직접 접근하는 메모리라서 주기억장치라고 불린다. 프로세서 캐시나 시스템 ROM같은 메모리가 포함되는데 보통 주기억장치라고 하면 RAM을 뜻한다. RAM은 보조기억장치보다 속도가 훨씬 빠르기 떄문에 CPU와 보조기억장치 사이에 위치한다.
 
 
++ week1 STEP2 순서도
 <img width=70% src="https://user-images.githubusercontent.com/82566116/163519232-f81cdbd1-4cc6-4d9b-9bf9-0d04d5120fa9.png">
+
+
++ week1 STEP3 순서도
+<img width=80% src="https://user-images.githubusercontent.com/82566116/163828946-2c03e42d-5d06-413b-9a73-d305a3f169e0.png">
+
+

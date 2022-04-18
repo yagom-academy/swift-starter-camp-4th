@@ -8,29 +8,53 @@
 
 import Foundation
 
-func drawIceCream() {
-    let widthOfIceCream = 11
-    let iceCreamHeight = 8
-    
-    for _ in 1...iceCreamHeight {
-        for _ in 1...widthOfIceCream {
-            print("*", terminator: "")
-        }
-        print()
+// STEP3
+
+
+var isToppingOnLeft = false
+
+func getEachLayer(shapeOf peperoShape: String, and topping: String ) -> String {
+    if isToppingOnLeft == true {
+        return topping + peperoShape
+    }
+    else {
+        return " " + peperoShape + topping
     }
 }
 
-func drawIceCreamStick() {
-    let stickHeight = 4
-    let spaceWidth = 4
-    
-    for _ in 1...stickHeight {
-        for _ in 1...spaceWidth {
-            print(" ", terminator: "")
-        }
-        print("| |")
+
+func drawPeperoBody(length: Int, shapeOf peperoShape: String, and topping: String) {
+    for _ in 1...length {
+        isToppingOnLeft = !isToppingOnLeft
+        let layer = getEachLayer(shapeOf: peperoShape, and: topping)
+        print(layer)
     }
 }
 
-drawIceCream()
-drawIceCreamStick()
+func drawPeperoStick(length: Int) {
+    for _ in 1...length {
+        let layer = " " + "| |"
+        print(layer)
+    }
+}
+
+
+func makePepero(bodyHeight: Int, stickHeight: Int, shapeOf peperoShape: String, and garnish: String) {
+    
+    let topping = garnish == "" ? " " : garnish
+    
+    print("""
+          <정보>
+          길이: \(bodyHeight)
+          몸통: \(peperoShape)
+          토핑: \(topping)
+          막대길이: \(stickHeight)\n
+          """)
+    
+    drawPeperoBody(length: bodyHeight, shapeOf: peperoShape, and: topping)
+    drawPeperoStick(length: stickHeight)
+    
+}
+
+makePepero(bodyHeight: 10, stickHeight: 4, shapeOf: "***", and: "#")
+makePepero(bodyHeight: 6, stickHeight: 3, shapeOf: "|0|", and: "&")
