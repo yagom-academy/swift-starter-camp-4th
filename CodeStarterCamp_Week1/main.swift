@@ -32,4 +32,4 @@ func drawStick(ice_width: Int) {
     }
 }
 
-drawIce(width: 6, height: 8)
+drawIce(width: 5, height: 8)
