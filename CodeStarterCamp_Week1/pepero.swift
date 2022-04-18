@@ -9,7 +9,6 @@ import Foundation
 
 func drawStick(bodyShape: String, stickHeignt: Int) {
     for _ in 0 ..< stickHeignt {
-        //print("","|", String(repeating: " ", count: bodyShape.count - 2), "|")
         print(" ", terminator: "")
         print("|", terminator: "")
         print(String(repeating: " ", count: bodyShape.count - 2), terminator: "")
@@ -18,7 +17,7 @@ func drawStick(bodyShape: String, stickHeignt: Int) {
 
 }
 
-func drawBodyShape(bodyShape: String, topping: String, toppingLR: Bool) {
+func drawBodyShape(bodyShape: String, topping: String, toppingL: Bool) {
     var body: String = ""
     var toppingShape: String = topping
     
@@ -26,16 +25,16 @@ func drawBodyShape(bodyShape: String, topping: String, toppingLR: Bool) {
         toppingShape = " "
     }
      
-    body = (toppingLR ? toppingShape : " ") + "\(bodyShape)" + (toppingLR ? "" : toppingShape)
+    body = (toppingL ? toppingShape : " ") + "\(bodyShape)" + (toppingL ? "" : toppingShape)
     print(body)
 }
 
 func drawBodyHeight(bodyShape: String, topping: String, bodyHeight: Int) {
     for i in 0 ..< bodyHeight {
         if i % 2 == 0 {
-            drawBodyShape(bodyShape: bodyShape, topping: topping, toppingLR: true)
+            drawBodyShape(bodyShape: bodyShape, topping: topping, toppingL: true)
         } else {
-            drawBodyShape(bodyShape: bodyShape, topping: topping, toppingLR: false)
+            drawBodyShape(bodyShape: bodyShape, topping: topping, toppingL: false)
         }
     }
 }
@@ -49,7 +48,7 @@ func printInfo(stickHeight: Int, bodyShape: String, topping: String = "", bodyHe
     print("")
 }
 
-func printPepero(stickHeight: Int, bodyShape: String, topping: String = "", bodyHeight: Int) {
+func drawPepero(stickHeight: Int, bodyShape: String, topping: String = "", bodyHeight: Int) {
     drawBodyHeight(bodyShape: bodyShape, topping: topping, bodyHeight: bodyHeight)
     drawStick(bodyShape: bodyShape, stickHeignt: stickHeight)
 }
