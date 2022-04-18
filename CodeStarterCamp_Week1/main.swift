@@ -13,7 +13,7 @@ import Foundation
 
 var isToppingOnLeft = false
 
-func getEachlayer(shapeOf peperoShape: String, and topping: String ) -> String {
+func getEachLayer(shapeOf peperoShape: String, and topping: String ) -> String {
     if isToppingOnLeft == true {
         return topping + peperoShape
     }
@@ -26,7 +26,7 @@ func getEachlayer(shapeOf peperoShape: String, and topping: String ) -> String {
 func drawPeperoBody(length: Int, shapeOf peperoShape: String, and topping: String) {
     for _ in 1...length {
         isToppingOnLeft = !isToppingOnLeft
-        let layer = getEachlayer(shapeOf: peperoShape, and: topping)
+        let layer = getEachLayer(shapeOf: peperoShape, and: topping)
         print(layer)
     }
 }
