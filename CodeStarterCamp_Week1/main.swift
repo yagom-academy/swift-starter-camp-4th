@@ -29,5 +29,5 @@ printInfo(stickHeight: 5, bodyShape: "**",topping: "$", bodyHeight: 9)
 drawPepero(stickHeight: 4, bodyShape: "**", topping: "#", bodyHeight: 9)
 
 //topping 미존재
-printInfo(stickHeight: 5, bodyShape: "**", bodyHeight: 9)
-drawPepero(stickHeight: 4, bodyShape: "**", topping: "#", bodyHeight: 9)
+printInfo(stickHeight: 5, bodyShape: "##############", topping: "$", bodyHeight: 9)
+drawPepero(stickHeight: 4, bodyShape: "##############", topping: "$", bodyHeight: 9)
