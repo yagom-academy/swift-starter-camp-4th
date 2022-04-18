@@ -8,19 +8,18 @@
 
 import Foundation
 
-func iceCream(){
-    for star in 1...8{
-        print("***********")
-    }
-    
+for iceCream in 1...8 {
+    drawIceCream()
 }
-
-iceCream()
-
-func iceCreamBar(){
-    for bar in 1...4{
-        print("    | |    ")
+func drawIceCream() {
+    for iceCreamDot in 1...11 {
+        print("*",terminator:"")
     }
+    print()
 }
-
-iceCreamBar()
+for iceCreamBar in 1...4 {
+    drawIceCreamBar()
+}
+func drawIceCreamBar() {
+        print("\t| | \t")
+    }
