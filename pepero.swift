@@ -8,14 +8,35 @@
 
 import Foundation
 
-func makePeperoStick(howLong stickLength: Int) -> String {
-    var count = 1
-    var peperoStick = ""
-    while count <= stickLength {
-        peperoStick.append(" | | \n")
-        count += 1
+func printPeperoOnOrder(body: String, topping: String, bodyLength: Int, stickLength: Int) {
+    var pepero = ""
+    printPeperoInformation(body, topping, bodyLength, stickLength)
+    let peperoBody = makePeperoBody(topping, on: body, length: bodyLength)
+    pepero.append(peperoBody)
+    let peperoStick = makePeperoStick(length: stickLength)
+    pepero.append(peperoStick)
+    print(pepero)
+}
+
+func printPeperoInformation(_ body: String, _ topping: String, _ bodyLength: Int, _ stickLength: Int) {
+    let peperoInformation = """
+<정보>
+길이: \(bodyLength)
+몸통: \(body)
+토핑: \(topping)
+막대길이: \(stickLength)
+
+"""
+    print(peperoInformation)
+}
+
+func makePeperoBody(_ topping: String, on body: String, length bodyLength: Int) -> String {
+    var peperoBody = ""
+    for count in 1...bodyLength {
+        let peperoBodyMold = makePeperoBodyMold(topping, on: body, toppingPosition: count%2)
+        peperoBody.append(peperoBodyMold)
     }
-    return peperoStick
+    return peperoBody
 }
 
 func makePeperoBodyMold(_ topping: String, on body: String, toppingPosition: Int) -> String {
@@ -32,33 +53,12 @@ func makePeperoBodyMold(_ topping: String, on body: String, toppingPosition: Int
     return peperoBodyMold
 }
 
-func makePeperoBody(_ topping: String, on body: String, howLong bodyLength: Int) -> String {
-    var peperoBody = ""
-    for count in 1...bodyLength {
-        let peperoBodyMold = makePeperoBodyMold(topping, on: body, toppingPosition: count%2)
-        peperoBody.append(peperoBodyMold)
+func makePeperoStick(length stickLength: Int) -> String {
+    var count = 1
+    var peperoStick = ""
+    while count <= stickLength {
+        peperoStick.append(" | | \n")
+        count += 1
     }
-    return peperoBody
-}
-
-func printPeperoOnOrder(body: String, topping: String, bodyLength: Int, stickLength: Int) {
-    var pepero = ""
-    printPeperoInfomation(body, topping, bodyLength, stickLength)
-    let peperoBody = makePeperoBody(topping, on: body, howLong: bodyLength)
-    pepero.append(peperoBody)
-    let peperoStick = makePeperoStick(howLong: stickLength)
-    pepero.append(peperoStick)
-    print(pepero)
-}
-
-func printPeperoInfomation(_ body: String, _ topping: String, _ bodyLength: Int, _ stickLength: Int) {
-    let peperoInfomation = """
-<정보>
-길이: \(bodyLength)
-몸통: \(body)
-토핑: \(topping)
-막대길이: \(stickLength)
-
-"""
-    print(peperoInfomation)
+    return peperoStick
 }
