@@ -18,12 +18,16 @@ import Foundation
 //pepero 출력
 //topping 존재
 printInfo(stickHeight: 4, bodyShape: "*****", topping: "#", bodyHeight: 9)
+printPepero(stickHeight: 4, bodyShape: "*****", topping: "#", bodyHeight: 9)
 
 //topping 미존재
 printInfo(stickHeight: 4, bodyShape: "***", bodyHeight: 9)
+printPepero(stickHeight: 4, bodyShape: "*****", topping: "#", bodyHeight: 9)
 
 //topping 존재
-printInfo(stickHeight: 4, bodyShape: "**",topping: "$", bodyHeight: 9)
+printInfo(stickHeight: 5, bodyShape: "**",topping: "$", bodyHeight: 9)
+printPepero(stickHeight: 4, bodyShape: "*****", topping: "#", bodyHeight: 9)
 
 //topping 미존재
-printInfo(stickHeight: 4, bodyShape: "**", bodyHeight: 9)
+printInfo(stickHeight: 5, bodyShape: "**", bodyHeight: 9)
+printPepero(stickHeight: 4, bodyShape: "*****", topping: "#", bodyHeight: 9)

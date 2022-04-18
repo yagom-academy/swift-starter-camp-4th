@@ -15,6 +15,7 @@ func drawStick(bodyShape: String, stickHeignt: Int) {
         print(String(repeating: " ", count: bodyShape.count - 2), terminator: "")
         print("|")
     }
+
 }
 
 func drawBodyShape(bodyShape: String, topping: String, toppingLR: Bool) {
@@ -46,7 +47,9 @@ func printInfo(stickHeight: Int, bodyShape: String, topping: String = "", bodyHe
     print("토핑: \(topping)")
     print("막대길이: \(stickHeight)")
     print("")
-    
+}
+
+func printPepero(stickHeight: Int, bodyShape: String, topping: String = "", bodyHeight: Int) {
     drawBodyHeight(bodyShape: bodyShape, topping: topping, bodyHeight: bodyHeight)
     drawStick(bodyShape: bodyShape, stickHeignt: stickHeight)
 }
