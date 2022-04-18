@@ -1,8 +1,8 @@
 //
-//  main.swift
-//  Step3
+//  step3.swift
+//  CodeStarterCamp_Week1
 //
-//  Created by 김인호 on 2022/04/16.
+//  Created by 김인호 on 2022/04/18.
 //
 
 import Foundation
@@ -39,4 +39,4 @@ func makePepero(with bodyHeight: Int,using ingredient: String, topping: String, 
     makeStick(with: stickHeight)
 }
 
-makePepero(with: 12, using: "***", topping: "$", stickHeight: 6)
+
