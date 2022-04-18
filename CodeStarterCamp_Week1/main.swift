@@ -8,6 +8,7 @@
 
 import Foundation
 
+<<<<<<< HEAD
 func CompeleteIceCream() {
     makeIceCream()
     makeIceCreamStick()
@@ -55,6 +56,33 @@ func CompeletePepero() {
 }
 
 CompeletePepero()
+=======
+
+//makeIceCream 부분
+
+func makeIceCream() {
+    for height in 1...8 {
+        for width in 1...11 {
+            print("*", terminator: "")
+        }
+        print("")
+    }
+}
+
+makeIceCream()
+
+func makeIceCreamStick() {
+    for x in 1...4 {
+        for y in 1...4 {
+            print(" ", terminator: "")
+        }
+        print("| |")
+    }
+}
+
+makeIceCreamStick()
+
+>>>>>>> 6585929338347c65a42f9ff4d212310d27f3943d
 
 
 
