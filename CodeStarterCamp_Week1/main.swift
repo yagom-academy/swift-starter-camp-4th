@@ -29,5 +29,5 @@ func makeStick() {
 makeIceCreamBody()
 makeStick()
 
-makePepero(with: 12, using: "***", topping: "$", stickHeight: 6)
+makePepero(with: 12, stickHeight: 6, using: "***", and: "$")
 

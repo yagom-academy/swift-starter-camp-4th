@@ -16,7 +16,6 @@
 ## [STEP 2]
 ![순서도 drawio](https://user-images.githubusercontent.com/71054048/163780695-8ff97f19-ed02-40ab-af5d-19b681ef38b6.jpg)
 
-
 ## [STEP 3]
-![빼빼로만들기 순서도](https://user-images.githubusercontent.com/71054048/163779527-1dc0d094-9b29-4cbb-98ef-f225847fd99f.jpg)
+![빼빼로순서도 drawio](https://user-images.githubusercontent.com/71054048/163793147-d1383743-5401-4273-bbaf-d2fc4ef36e3b.jpg)
 

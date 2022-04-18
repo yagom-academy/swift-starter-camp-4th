@@ -8,35 +8,34 @@
 import Foundation
 
 func makeStick(with height: Int) {
-    var i = 1
-    var j = 1
-    while i <= height {
-        j = 1
-        while j <= 2 {
+    var currentHeight = 1
+    var stickProgress = 1
+    while currentHeight <= height {
+        stickProgress = 1
+        while stickProgress <= 2 {
             print(" |", terminator: "")
-            j += 1
+            stickProgress += 1
         }
-        i += 1
+        currentHeight += 1
         print("")
     }
 }
 
-func makePartOfBody(with ingredient: String, topping: String) {
+func makePartOfBody(using ingredient: String, and topping: String) {
     print("\(topping)\(ingredient) ")
     print(" \(ingredient)\(topping)")
 }
 
-func makeBody(with height: Int, using ingredient: String, topping: String) {
-    var i = 1
-    while i <= (height / 2) {
-        makePartOfBody(with: ingredient, topping: topping)
-        i += 1
+func makeBody(with height: Int, using ingredient: String, and topping: String) {
+    var currentHeight = 1
+    while currentHeight <= (height / 2) {
+        makePartOfBody(using: ingredient, and: topping)
+        currentHeight += 1
     }
 }
 
-func makePepero(with bodyHeight: Int,using ingredient: String, topping: String, stickHeight: Int) {
-    makeBody(with: bodyHeight, using: ingredient, topping: topping)
+func makePepero(with bodyHeight: Int, stickHeight: Int, using ingredient: String, and topping: String ) {
+    makeBody(with: bodyHeight, using: ingredient, and: topping)
     makeStick(with: stickHeight)
 }
-
 
