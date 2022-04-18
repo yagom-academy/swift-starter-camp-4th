@@ -1,30 +1,18 @@
-//
-//  main.swift
-//  Step3
-//
-//  Created by 둘리 on 2022/04/16.
-//
-
 import Foundation
 
 var peperoBody = ""
 
-func printPeperoStick(length: Int) {
-    for count in 1...length {
+func printPeperoStick(peperoStickLength length: Int) {
+    for _ in 1...length {
         print(" | |")
     }
 }
 
-func setPeperoBody(body: String, topping: String) {
-    if topping == "" {
-        peperoBody = " \(body)"
-    }
-    else {
-        peperoBody = "\(topping)\(body)"
-    }
+func makePeperoBody(peperoBodyShape shape: String, toppingShape topping: String) {
+    peperoBody = topping == "" ? " \(shape)" : "\(topping)\(shape)"
 }
 
-func printPeperoBody(length: Int) {
+func printPeperoBody(peperoBodyLength length: Int) {
     for count in 1...length {
         if peperoBody.hasPrefix(" ") || count % 2 != 0 {
             print(peperoBody)
@@ -36,19 +24,22 @@ func printPeperoBody(length: Int) {
     }
 }
 
-func printPepero(peperoBodyLength: Int, peperoBody: String, topping: String, peperoStickLength: Int) {
-    print("<정보>")
-    print("길이: \(peperoBodyLength)")
-    print("몸통: \(peperoBody)")
-    print("토핑: \(topping)")
-    print("막대길이: \(peperoStickLength)\n")
-    
-    setPeperoBody(body: peperoBody, topping: topping)
-    printPeperoBody(length: peperoBodyLength)
-    printPeperoStick(length: peperoStickLength)
+func printPepero(peperoBodyLength bodyLength: Int, peperoBodyShape bodyShape: String, peperoToppingShape toppingShape: String, peperoStickLength stickLength: Int) {
+ 
+    print("""
+          <정보>
+          길이: \(bodyLength)
+          몸통: \(bodyShape)
+          토핑: \(toppingShape)
+          막대길이: \(stickLength)
+          
+          """)
+    makePeperoBody(peperoBodyShape: bodyShape, toppingShape: toppingShape)
+    printPeperoBody(peperoBodyLength: bodyLength)
+    printPeperoStick(peperoStickLength: stickLength)
 }
 
-printPepero(peperoBodyLength: 6, peperoBody: "***", topping: "!", peperoStickLength: 4)
+printPepero(peperoBodyLength: 7, peperoBodyShape: "***", peperoToppingShape: "!", peperoStickLength: 4)
 
 
 
