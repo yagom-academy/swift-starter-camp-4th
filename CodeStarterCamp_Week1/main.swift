@@ -16,7 +16,7 @@ func makeIceCream(iceCreamWidth: Int, iceCreamHeight: Int, barHeight: Int) {
 func makeIceCreamBody(iceCreamWidth: Int, iceCreamHeight: Int) {
     for _ in 1...iceCreamHeight {
         for _ in 1...iceCreamWidth {
-            print("*", separator: "", terminator: "")
+            print("*", terminator: "")
         }
         print("")
     }
