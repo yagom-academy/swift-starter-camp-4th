@@ -13,46 +13,48 @@ import Foundation
 
 var isToppingOnLeft = false
 
-func drawEachBody(bodyShape: String, topping: String ) -> String {
+func getEachlayer(shapeOf peperoShape: String, and topping: String ) -> String {
     if isToppingOnLeft == true {
-        return topping + bodyShape
+        return topping + peperoShape
     }
     else {
-        return " " + bodyShape + topping
+        return " " + peperoShape + topping
     }
 }
 
-func drawPeperoBody(bodylength: Int, bodyShape: String, topping: String){
-    for _ in 1...bodylength {
+
+func drawPeperoBody(length: Int, shapeOf peperoShape: String, and topping: String) {
+    for _ in 1...length {
         isToppingOnLeft = !isToppingOnLeft
-        let layer = drawEachBody(bodyShape: bodyShape, topping: topping)
+        let layer = getEachlayer(shapeOf: peperoShape, and: topping)
         print(layer)
     }
-
 }
 
-func drawPeperoStick(sticklength: Int) {
-    for _ in 1...sticklength {
-        print(" | |")
+func drawPeperoStick(length: Int) {
+    for _ in 1...length {
+        let layer = " " + "| |"
+        print(layer)
     }
 }
 
 
-func makePepero() {
-    let bodylength: Int = 10
-    let bodyShape: String = "***"
-    var topping: String = ""
-    let sticklength: Int = 4
+func makePepero(bodyHeight: Int, stickHeight: Int, shapeOf peperoShape: String, and garnish: String) {
     
-    print("<정보>")
-    print("길이: \(bodylength)")
-    print("몸통: \(bodyShape)")
-    print("토핑: \(topping)")
-    print("막대길이: \(sticklength)\n")
+    let topping = garnish == "" ? " " : garnish
     
-    if topping == "" { topping = " " }
-    drawPeperoBody(bodylength: bodylength, bodyShape: bodyShape, topping: topping)
-    drawPeperoStick(sticklength: sticklength)
+    print("""
+          <정보>
+          길이: \(bodyHeight)
+          몸통: \(peperoShape)
+          토핑: \(topping)
+          막대길이: \(stickHeight)\n
+          """)
+    
+    drawPeperoBody(length: bodyHeight, shapeOf: peperoShape, and: topping)
+    drawPeperoStick(length: stickHeight)
     
 }
-makePepero()
+
+makePepero(bodyHeight: 10, stickHeight: 4, shapeOf: "***", and: "#")
+makePepero(bodyHeight: 6, stickHeight: 3, shapeOf: "|0|", and: "&")
