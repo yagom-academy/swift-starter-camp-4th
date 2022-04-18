@@ -9,4 +9,4 @@
 import Foundation
 
 printBody(width: 6, height: 5)
-printStick(width: 5, height: 4)
+printStick(width: 3, height: 3)
