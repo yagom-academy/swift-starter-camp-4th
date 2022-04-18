@@ -1,26 +1,10 @@
-    Week1 [Step2] BaDook2
+    Week1 [Step3] BaDook2
     
-    아이스크림을 그리는 함수 두 가지(아이스크림 부분과 막대기 부분)를 선언하라는 조건이 있기에 
-    아이스크림을 그리는 함수인 drawice와 막대기 부분을 그리는 함수인 drawstick이라는 두 함수를 선언했습니다.
-    함수를 선언할 때에는 동사로 선언하라고 하셨기 때문에 draw라는 이름을 중심으로 선언하였습니다.
-    그리고 drawice함수에서는 
+    이번 미션의 조건이 3개의 메소드를 사용해야해서
     
-    ice의 높이(ice_hegiht)를 입력받은 높이만큼(for i 1...ice_height)
+    스틱을 그리는 drawStick, 아이스크림을 그리는 iceCream, iceCream함수를 반복해주는 drawBody 함수를 만들었습니다.
     
-    11개의 *를 출력하였습니다.
-    for _ in 1...11{ print("*",terminator:" ")}
+    이번 미션에서 가장 어려웠던?부분은 홀수번째 아이스크림은 앞에 토핑이, 짝수번째 아이스크림은 뒤에 토핑이 오는 것이었습니다. 그래서 제가 생각해낸 방법은 기본적으로 토핑을 공백 띄어쓰기 " "로 만들고 홀수번째와 짝수번째를 각각 나누는 것이 아니라 그냥 한꺼번에 출력을 하였습니다. 물론 이 방법은 몸통의 길이(drawBody의 length)가 짝수인 경우에만 정상작동합니다.
     
-    그리고 print함수의 terminator를 사용하게 되면 다음 줄까지 이어붙이므로 
-    drawice 함수 내에 맨 끝에 부분에 print()를 추가하여 줄바꿈을 시행했습니다.
-    
-    drawstick 함수에서는 
-    stick의 높이(stick_height)를 입력받은 높이만큼 print("    | |")를 출력해주었습니다.
-    
-    stick을 그릴 때 4칸의 빈칸 후에 "| |"가 오는 것을 보고 drawice 함수처럼 이중 for문을 할까 했지만
-    복잡해질 것 같아 위와같이 출력하였습니다
-    
+    <img width="135" alt="스크린샷 2022-04-19 오전 1 22 31" src="https://user-images.githubusercontent.com/97817208/163839823-b10d7f4b-bc61-4717-bfb0-4b78676a9a00.png">
 
-<img width="141" alt="순서도" src="https://user-images.githubusercontent.com/97817208/163376542-0d7d2096-5d30-495c-a041-2b26d1839430.png">
-
-    
-    
