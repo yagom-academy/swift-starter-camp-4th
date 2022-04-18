@@ -8,10 +8,9 @@
 
 import Foundation
 
-
-func makeIceCream(iceCreamWidth: Int, iceCreamHeight: Int, barLayer: Int) {
+func makeIceCream(iceCreamWidth: Int, iceCreamHeight: Int, barHeight: Int) {
     makeIceCreamBody(iceCreamWidth: iceCreamWidth, iceCreamHeight: iceCreamHeight)
-    makeIceCreamBar(iceCreamWidth: iceCreamWidth, barLayer: barLayer)
+    makeIceCreamBar(iceCreamWidth: iceCreamWidth, barHeight: barHeight)
 }
 
 func makeIceCreamBody(iceCreamWidth: Int, iceCreamHeight: Int) {
@@ -23,17 +22,16 @@ func makeIceCreamBody(iceCreamWidth: Int, iceCreamHeight: Int) {
     }
 }
 
-func makeIceCreamBar(iceCreamWidth: Int, barLayer: Int) {
+func makeIceCreamBar(iceCreamWidth: Int, barHeight: Int) {
     if iceCreamWidth % 2 == 0 {
-        for _ in 1...barLayer {
+        for _ in 1...barHeight {
             for _ in 1...((iceCreamWidth - 4) / 2) {
                 print(" ", separator: "", terminator: "")
             }
             print("|  |")
         }
-    }
-    else if iceCreamWidth % 2 == 1 {
-        for _ in 1...barLayer {
+    } else if iceCreamWidth % 2 == 1 {
+        for _ in 1...barHeight {
             for _ in 1...((iceCreamWidth - 3) / 2) {
                 print(" ", separator: "", terminator: "")
             }
@@ -42,4 +40,4 @@ func makeIceCreamBar(iceCreamWidth: Int, barLayer: Int) {
     }
 }
 
-makeIceCream(iceCreamWidth: 16, iceCreamHeight: 5, barLayer: 2)
+makeIceCream(iceCreamWidth: 16, iceCreamHeight: 5, barHeight: 2)
