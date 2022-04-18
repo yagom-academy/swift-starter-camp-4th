@@ -17,7 +17,7 @@ func drawIceCream() {
 func drawIceCreamBar() {
         print("\t| | \t")
     }
-func iceCream() {
+func drawTotalIceCream() {
     for iceCream in 1...8 {
         drawIceCream()
     }
@@ -25,7 +25,7 @@ func iceCream() {
         drawIceCreamBar()
     }
 }
-iceCream()
+drawTotalIceCream()
 
 
 
