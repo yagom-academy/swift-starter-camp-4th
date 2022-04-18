@@ -8,7 +8,7 @@
 
 import Foundation
 
-func drawIcecream() {
+func drawIce() {
     print ("***********")
 }
 
@@ -16,10 +16,12 @@ func drawStick() {
     print ("    | |")
 }
 
-for _ in 1...8 {
-    drawIcecream()
-}
+func drawIcecream(){
+    for _ in 1...8 {
+        drawIce()
+    }
 
-for _ in 1...4 {
-    drawStick()
+    for _ in 1...4 {
+        drawStick()
+    }
 }
