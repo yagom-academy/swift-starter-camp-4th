@@ -8,3 +8,6 @@
 
 ### Step 2: 아이스크림 그리기
 ![아이스크림_순서도](https://user-images.githubusercontent.com/94514250/163333747-a19af8cd-651b-439d-ae5a-1bfbf5c5f58d.png)
+
+### Step 3: 주문에 따른 빼빼로 그리기
+![빼빼로_순서도](https://user-images.githubusercontent.com/94514250/163798464-405f8076-d009-4fbb-8c9d-df5b0500ebfe.png)
