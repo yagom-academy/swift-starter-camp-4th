@@ -26,14 +26,14 @@ func makeIceCreamBar(iceCreamWidth: Int, barHeight: Int) {
     if iceCreamWidth % 2 == 0 {
         for _ in 1...barHeight {
             for _ in 1...((iceCreamWidth - 4) / 2) {
-                print(" ", separator: "", terminator: "")
+                print(" ", terminator: "")
             }
             print("|  |")
         }
     } else if iceCreamWidth % 2 == 1 {
         for _ in 1...barHeight {
             for _ in 1...((iceCreamWidth - 3) / 2) {
-                print(" ", separator: "", terminator: "")
+                print(" ", terminator: "")
             }
             print("| |")
         }
