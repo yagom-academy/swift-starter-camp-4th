@@ -7,10 +7,16 @@
 
 import Foundation
 
-func makeStick(height: Int) {
-    for _ in 1...height {
+func makePeperoStick(stickHeight: Int) {
+    for _ in 1...stickHeight {
         print(" | | ")
     }
 }
 
-makeStick(height: 5)
+func whatTypePepero(body: String, topping: String) {
+    print("\(topping)\(body) ")
+    print(" \(body)\(topping)")
+}
+
+makePeperoStick(stickHeight: 5)
+whatTypePepero(body: "***", topping: "&")
