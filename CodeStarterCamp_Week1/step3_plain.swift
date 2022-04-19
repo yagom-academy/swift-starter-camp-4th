@@ -16,3 +16,12 @@ func makePpaeppaeloBody(body: String, toping: String) {
 \(body)\(toping)
 """)
 }
+//MARK: - 빼빼로 바 만들기
+
+func makePpaeppaeloBar(bar : String, length: Int) {
+    
+    for ppaeppaeloBar in 1...length {
+        print(bar)
+    }
+}
+
