@@ -32,3 +32,10 @@ func makePpaeppaeloBar(bar : String, length: Int) {
         print(bar)
     }
 }
+//MARK: - 구현
+
+func showPpaeppaelo() {
+    
+makePpaeppaeloBodyLength(length: 10)
+makePpaeppaeloBar(bar: "| |", length: 4)
+}
