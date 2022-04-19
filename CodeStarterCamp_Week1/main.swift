@@ -31,9 +31,62 @@ func drawIcecreamBar(width: Int, height: Int) {
     }
 }
 
-drawIcecream(width: 11, height: 8)
-drawIcecreamBar(width: 11, height: 4)
-print("")
-drawIcecream(width: 10, height: 8)
-drawIcecreamBar(width: 10, height: 4)
 
+var length : Int = 10
+var body : String = "***"
+var topping : String = " "
+var barLength : Int = 4
+
+print("<정보>")
+print("길이:", length)
+print("몸통:", body )
+print("토핑:", topping)
+print("막대길이:", barLength)
+print("")
+
+drawIceCream(length: length, body: body, topping: topping, barLength: barLength)
+print("")
+
+length = 12
+body = "***"
+topping = "&"
+barLength = 4
+
+print("<정보>")
+print("길이:", length)
+print("몸통:", body )
+print("토핑:", topping)
+print("막대길이:", barLength)
+print("")
+
+drawIceCream(length: length, body: body, topping: topping, barLength: barLength)
+print("")
+
+length = 12
+body = "***"
+topping = "#"
+barLength = 6
+
+print("<정보>")
+print("길이:", length)
+print("몸통:", body )
+print("토핑:", topping)
+print("막대길이:", barLength)
+print("")
+
+drawIceCream(length: length, body: body, topping: topping, barLength: barLength)
+print("")
+
+length = 6
+body = "|0|"
+topping = " "
+barLength = 4
+
+print("<정보>")
+print("길이:", length)
+print("몸통:", body )
+print("토핑:", topping)
+print("막대길이:", barLength)
+print("")
+
+drawIceCream(length: length, body: body, topping: topping, barLength: barLength)
