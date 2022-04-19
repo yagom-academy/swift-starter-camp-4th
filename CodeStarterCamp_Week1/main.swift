@@ -8,7 +8,7 @@
 
 import Foundation
 
-func iceCream(row: Int, col: Int) -> Void{
+func makeIceCream(row: Int, col: Int) -> Void{
     for _ in 1...col{
         for _ in 1...row{
             print("*", terminator: "")
@@ -17,7 +17,7 @@ func iceCream(row: Int, col: Int) -> Void{
     }
 }
 
-func stick(row: Int, col: Int) -> Void{
+func makeStick(row: Int, col: Int) -> Void{
     for _ in 1...col{
         for _ in 1...row{
             print(" ", terminator: "")
@@ -25,5 +25,5 @@ func stick(row: Int, col: Int) -> Void{
         print("| |")
     }
 }
-iceCream(row: 11, col: 8)
-stick(row: 4, col: 4)
+makeIceCream(row: 11, col: 8)
+makeStick(row: 4, col: 4)
