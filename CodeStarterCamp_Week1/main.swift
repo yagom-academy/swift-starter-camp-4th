@@ -21,3 +21,24 @@ func drawBodyOfPepero(body bodyHeight: Int, drawBody: String) {
 		}
 	}
 }
+
+func drawFlavorOfPepero(mainFlavor flavors: String, withTopping toppings: String) -> String {
+	let amountOfToppings = toppings.count
+	var space: String = " "
+	var toppings: String = toppings
+	var flavors: String = flavors
+
+	if amountOfToppings < 1 {
+		toppings = " "
+	} else {
+		for _ in 1..<amountOfToppings {
+			space += space
+		}
+	}
+	if flavors.count < 3 {
+		print("몸통은 최소 3자리여야 합니다.")
+		flavors = "\(flavors)\(flavors)\(flavors)"
+	}
+	let printing = "\(toppings)\(flavors)\(space)"
+	return printing
+}
