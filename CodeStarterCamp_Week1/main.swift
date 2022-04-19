@@ -9,7 +9,7 @@
 import Foundation
 
 //아이스크림 바디 함수
-func icecreamBody(hight: Int, width: Int){
+func makeIcecreamBody(hight: Int, width: Int){
     for _ in 1...hight{
         for _ in 1...width{
             print("*", terminator:"") // "*"을 줄바꿈 없이 8번 반복 출력
@@ -19,7 +19,7 @@ func icecreamBody(hight: Int, width: Int){
 }
 
 //아이스크림 막대 함수
-func icecreamBar(hight: Int, width: Int){
+func makeIcecreamBar(hight: Int, width: Int){
     for _ in 1...hight{
         for _ in 1...((width/2) - 1){
             print(" ", terminator: "") // 줄바꿈 없이 띄어쓰기 4번 출력
@@ -29,7 +29,7 @@ func icecreamBar(hight: Int, width: Int){
 }
 
 // 함수 호출
-icecreamBody(hight: 8, width: 11)
-icecreamBar(hight: 4 , width: 11)
+makeIcecreamBody(hight: 8, width: 11)
+makeIcecreamBar(hight: 4 , width: 11)
 
 
