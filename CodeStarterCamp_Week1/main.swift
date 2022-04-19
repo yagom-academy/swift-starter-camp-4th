@@ -8,36 +8,33 @@
 
 import Foundation
 
-func makeIceCream(iceCreamWidth: Int, iceCreamHeight: Int, barHeight: Int) {
-    makeIceCreamBody(iceCreamWidth: iceCreamWidth, iceCreamHeight: iceCreamHeight)
-    makeIceCreamBar(iceCreamWidth: iceCreamWidth, barHeight: barHeight)
-}
-
-func makeIceCreamBody(iceCreamWidth: Int, iceCreamHeight: Int) {
-    for _ in 1...iceCreamHeight {
-        for _ in 1...iceCreamWidth {
-            print("*", terminator: "")
-        }
-        print("")
+func makePeperoShape(bodyShape: String, topping: String) {
+    if topping == "" {
+        print(" \(bodyShape)")
+        print(" \(bodyShape)")
+    } else {
+        print("\(topping)\(bodyShape)")
+        print(" \(bodyShape)\(topping)")
     }
 }
 
-func makeIceCreamBar(iceCreamWidth: Int, barHeight: Int) {
-    if iceCreamWidth % 2 == 0 {
-        for _ in 1...barHeight {
-            for _ in 1...((iceCreamWidth - 4) / 2) {
-                print(" ", terminator: "")
-            }
-            print("|  |")
-        }
-    } else if iceCreamWidth % 2 == 1 {
-        for _ in 1...barHeight {
-            for _ in 1...((iceCreamWidth - 3) / 2) {
-                print(" ", terminator: "")
-            }
-            print("| |")
-        }
+func makePeperoBody(bodyHeight: Int, bodyShape: String, topping: String) {
+    for _ in 1...(bodyHeight / 2) {
+        makePeperoShape(bodyShape: bodyShape, topping: topping)
     }
 }
 
-makeIceCream(iceCreamWidth: 16, iceCreamHeight: 5, barHeight: 2)
+func makePeperoBar(barHeight: Int) {
+    for _ in 1...barHeight {
+        print(" | |")
+    }
+}
+
+func makePepero(
+    bodyHeight: Int, bodyShape: String, topping: String, barHeight: Int) {
+    print("<정보>\n길이: \(bodyHeight)\n몸통: \(bodyShape)\n토핑: \(topping) \n막대길이: \(barHeight)\n")
+    makePeperoBody(bodyHeight: bodyHeight, bodyShape: bodyShape, topping: topping)
+    makePeperoBar(barHeight: barHeight)
+}
+
+makePepero(bodyHeight: 12, bodyShape: "***", topping: "#", barHeight: 6)
