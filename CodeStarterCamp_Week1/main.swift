@@ -9,8 +9,8 @@
 import Foundation
 
 var bodyLength: Int = 12
-var bodyShape: String = "|0|"
-var topping: String = ""
+var bodyShape: String = "***"
+var topping: String = "&"
 var stickLength: Int = 4
 
 func drawBody(count: Int) {
@@ -32,8 +32,14 @@ func drawStick(len: Int) {
 }
 
 func printInfo() {
-    print("<정보>","길이: \(bodyLength)","몸통: \(bodyShape)","토핑: \(topping)","막대길이: \(stickLength)",separator: "\n")
-    print()
+    print("""
+          <정보>
+          길이: \(bodyLength)
+          몸통: \(bodyShape)
+          토핑: \(topping)
+          막대길이: \(stickLength)
+          
+          """)
 }
 
 func drawPepero() {
