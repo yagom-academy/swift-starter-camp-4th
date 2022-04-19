@@ -1,30 +1,7 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
 
 import Foundation
 
-func drawIce(height:Int){
-    for _ in 1...height{
-        for _ in 1...11{
-            print("*",terminator: "")
-        }
-        print()
-    }
-}
-func drawStick(height:Int){
-    for _ in 1...height{
-        print("    | |")
-    }
-}
-
-func drawIceCream(iceHeight : Int, stickHeight : Int){
-    drawIce(height : iceHeight)
-    drawStick(height: stickHeight)
-}
-
-drawIceCream(iceHeight: 8, stickHeight: 4)
+drawPepero(bodyLength: 10, body: "***", stickLength: 4) // 일반 빼빼로
+drawPepero(bodyLength: 12, body: "***", topping: "&", stickLength: 4) // & 토핑 빼빼로
+drawPepero(bodyLength: 12, body: "***", topping: "#", stickLength: 6) // # 토핑 빼빼로
+drawPepero(bodyLength: 6, body: "|0|", stickLength: 4) // 누드 빼빼로
