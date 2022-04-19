@@ -30,3 +30,8 @@ func drawStick(len: Int) {
         print(" | |")
     }
 }
+
+func printInfo() {
+    print("<정보>","길이: \(bodyLength)","몸통: \(bodyShape)","토핑: \(topping)","막대길이: \(stickLength)",separator: "\n")
+    print()
+}
