@@ -14,7 +14,6 @@ func drawStick(bodyShape: String, stickHeignt: Int) {
         print(String(repeating: " ", count: bodyShape.count - 2), terminator: "")
         print("|")
     }
-
 }
 
 func drawBodyShape(bodyShape: String, topping: String, toppingL: Bool) {
