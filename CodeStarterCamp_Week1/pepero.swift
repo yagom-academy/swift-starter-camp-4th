@@ -16,7 +16,7 @@ func drawStick(bodyShape: String, stickHeignt: Int) {
     }
 }
 
-func drawBodyShape(bodyShape: String, topping: String, toppingL: Bool) {
+func drawBodyShape(bodyShape: String, topping: String, isLeftTopping: Bool) {
     var body: String = ""
     var toppingShape: String = topping
     
@@ -24,16 +24,16 @@ func drawBodyShape(bodyShape: String, topping: String, toppingL: Bool) {
         toppingShape = " "
     }
      
-    body = (toppingL ? toppingShape : " ") + "\(bodyShape)" + (toppingL ? "" : toppingShape)
+    body = (isLeftTopping ? toppingShape : " ") + "\(bodyShape)" + (isLeftTopping ? "" : toppingShape)
     print(body)
 }
 
 func drawBodyHeight(bodyShape: String, topping: String, bodyHeight: Int) {
     for i in 0 ..< bodyHeight {
         if i % 2 == 0 {
-            drawBodyShape(bodyShape: bodyShape, topping: topping, toppingL: true)
+            drawBodyShape(bodyShape: bodyShape, topping: topping, isLeftTopping: true)
         } else {
-            drawBodyShape(bodyShape: bodyShape, topping: topping, toppingL: false)
+            drawBodyShape(bodyShape: bodyShape, topping: topping, isLeftTopping: false)
         }
     }
 }
