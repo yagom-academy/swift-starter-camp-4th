@@ -8,24 +8,8 @@
 
 import Foundation
 
-func drawIceCream() {
-    for iceCreamDot in 1...11 {
-        print("*",terminator:"")
-    }
-    print()
-}
-func drawIceCreamBar() {
-        print("\t| | \t")
-    }
-func drawTotalIceCream() {
-    for iceCream in 1...8 {
-        drawIceCream()
-    }
-    for iceCreamBar in 1...4 {
-        drawIceCreamBar()
-    }
-}
-drawTotalIceCream()
-
-
-
+drawTotalIceCream1()
+drawTotalIceCream2()
+drawTotalIceCream3()
+drawTotalIceCream4()
+drawTotalIceCream_Self()
