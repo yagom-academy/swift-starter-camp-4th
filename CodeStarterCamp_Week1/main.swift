@@ -8,19 +8,19 @@
 
 import Foundation
 
-func makePeperoShape(bodyShape: String, topping: String) {
-    if topping == "" {
-        print(" \(bodyShape)")
-        print(" \(bodyShape)")
-    } else {
-        print("\(topping)\(bodyShape)")
-        print(" \(bodyShape)\(topping)")
-    }
-}
-
 func makePeperoBody(bodyHeight: Int, bodyShape: String, topping: String) {
-    for _ in 1...(bodyHeight / 2) {
-        makePeperoShape(bodyShape: bodyShape, topping: topping)
+    if topping == "" {
+        for _ in 1...bodyHeight {
+            print(" \(bodyShape)")
+        }
+    } else {
+        for height in 1...bodyHeight {
+            if height % 2 == 0 {
+                print(" \(bodyShape)\(topping)")
+            } else if height % 2 == 1 {
+                print("\(topping)\(bodyShape)")
+            }
+        }
     }
 }
 
@@ -37,4 +37,4 @@ func makePepero(
     makePeperoBar(barHeight: barHeight)
 }
 
-makePepero(bodyHeight: 12, bodyShape: "***", topping: "#", barHeight: 6)
+makePepero(bodyHeight: 7, bodyShape: "***", topping: "$", barHeight: 6)
