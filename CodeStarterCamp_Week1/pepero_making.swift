@@ -7,38 +7,48 @@
 
 import Foundation
 
-var peperobody: String = ""
+var peperoBody: String = ""
 
-func makePeperoHeigth (peperoHeight: Int) {
-    if peperoHeight % 2 == 0 {
-        for _ in 1...peperoHeight/2 {
-            print(" " + peperobody)
-            print(" " + String(peperobody.reversed()))
-        }
-    }
-    else {
-        for _ in 1...peperoHeight/2 {
-            print(" " + peperobody)
-            print(" " + String(peperobody.reversed()))
-        }
-        print(" " + peperobody)
-    }
-}
-func makePepero (peperoMatiral: String, topping: String) {
-    if topping.isEmpty {
-        peperobody = peperoMatiral
-    }
-    else {
-        peperobody = topping+peperoMatiral
+func makePeperoBody(pepero: String, topping: String) {
+    if topping == "" {
+        peperoBody = " " + pepero
+    } else {
+        peperoBody = topping + pepero
     }
 }
 
-func makeBar (barHeigth: Int) {
-    for _ in 1...barHeigth {
+func makePeperoBodyHeight(peperoHeight: Int) {
+    for count in 1...peperoHeight {
+        if count % 2 == 0 {
+            print(" " + String(peperoBody.reversed()))
+        } else {
+         print(peperoBody)
+        }
+    }
+}
+
+func makePeperoBarHeight(peperoBar: Int) {
+    for _ in 1...peperoBar {
         print(" | |")
     }
 }
 
-makePepero(peperoMatiral: "|0|", topping: "")
-makePeperoHeigth(peperoHeight: 7)
-makeBar(barHeigth: 4)
+func peperoMake(peperoHeight: Int, pepero: String, topping: String, peperoBar: Int) {
+    print("<정보>")
+    print("길이: \(peperoHeight)")
+    print("몸통: \(pepero)")
+    print("토핑: \(topping)")
+    print("막대길이: \(peperoBar)")
+
+    makePeperoBody(pepero: pepero, topping: topping)
+    makePeperoBodyHeight(peperoHeight: peperoHeight)
+    makePeperoBarHeight(peperoBar: peperoBar)
+}
+//예시
+peperoMake(peperoHeight: 10, pepero: "***", topping: "", peperoBar: 4)
+peperoMake(peperoHeight: 12, pepero: "***", topping: "&", peperoBar: 4)
+peperoMake(peperoHeight: 12, pepero: "***", topping: "#", peperoBar: 6)
+peperoMake(peperoHeight: 6, pepero: "|0|", topping: "", peperoBar: 4)
+
+//나만의 뺴뱨로 만들어보기
+peperoMake(peperoHeight: 6, pepero: "|✌|", topping: "", peperoBar: 2)
