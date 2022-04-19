@@ -27,4 +27,12 @@ import Foundation
 
 // 제가 여러가지 시도를 한 코드들(icecreamHorizontalFunc 등)은 파일을 지워서 ㅠㅠ... 올리지 못했습니다
 
- showPpaeppaelo()
+//MARK: - 빼빼로 만들기 파일 분리로 한방에 구현 시도
+func show() {
+showPpaeppaelo()
+showPpaeppaelo2()
+showPpaeppaelo3()
+showPpaeppaelo4()
+}
+
+show()
