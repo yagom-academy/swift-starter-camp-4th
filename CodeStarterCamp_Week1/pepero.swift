@@ -41,7 +41,7 @@ func drawPeperoChocoTopping(choco: String, topping: String) {
 
 //길이(Int)에 따라 몸통을 그리는 함수
 func drawPeperoBody(bodyLength: Int) {
-for _ in  1...bodyLength/2 {
+    for _ in  1...bodyLength/2 {
        drawPeperoChocoTopping(choco: choco, topping: topping)
     }
 }
