@@ -8,5 +8,5 @@
 
 import Foundation
 
-print("Hello, World!")
-
+printBody(width: 6, height: 5)
+printStick(width: 3, height: 3)
