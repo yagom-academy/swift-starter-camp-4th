@@ -29,4 +29,4 @@ func MakeIcecream(cream:Int , stick: Int) {
     namooStick(stick: stick)
 }
 
-MakeIcecream(cream: 9, stick: 4)
+MakeIcecream(cream: 10, stick: 4)
