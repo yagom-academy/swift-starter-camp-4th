@@ -42,3 +42,13 @@ func drawFlavorOfPepero(mainFlavor flavors: String, withTopping toppings: String
 	let printing = "\(toppings)\(flavors)\(space)"
 	return printing
 }
+
+func drawStickOfPepero(stick stickHeight: Int, drawWithToppings: String) {
+	let stickPosition = (drawWithToppings.count / 2) - 1
+	for _ in 1...stickHeight {
+		for _ in 1...stickPosition {
+			print(" ", terminator: "")
+		}
+		print("| |")
+	}
+}
