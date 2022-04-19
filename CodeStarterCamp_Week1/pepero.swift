@@ -7,40 +7,36 @@
 
 import Foundation
 
-var peperoBodyCustom :String = "";
+var peperoBodyCustom: String = ""
 
-func drawPepero(peperoLength: Int, peperoBody: String, peperoTopping: String, peperoBarLength: Int) {
+func drawPepero(peperoLength bodyLength: Int, peperoBody body: String, peperoTopping topping: String, peperoBarLength barLength: Int) {
     print("""
     
     <정보>
-    길이: \(peperoLength)
-    몸통: \(peperoBody)
-    토핑: \(peperoTopping)
-    막대길이: \(peperoBarLength)
+    길이: \(bodyLength)
+    몸통: \(body)
+    토핑: \(topping)
+    막대길이: \(barLength)
     
     """)
     
-    drawPeperoBody(peperoBody: peperoBody, peperoTopping: peperoTopping)
-    drawAllPeperoBody(peperoLength: peperoLength)
-    drawPeperoBar(peperoBarLength: peperoBarLength)
+    drawPeperoBody(peperoBody: body, peperoTopping: topping)
+    drawAllPeperoBody(peperoLength: bodyLength)
+    drawPeperoBar(peperoBarLength: barLength)
 }
 
-func drawPeperoBody(peperoBody: String, peperoTopping: String) {
-    peperoBodyCustom = peperoTopping + peperoBody + " "
+func drawPeperoBody(peperoBody body: String, peperoTopping topping: String) {
+    peperoBodyCustom = topping + body + " "
 }
 
-func drawAllPeperoBody(peperoLength: Int) {
-    for count in 1...peperoLength {
-        if count % 2 == 1 {
-            print(peperoBodyCustom)
-        } else {
-            print(String(peperoBodyCustom.reversed()))
-        }
+func drawAllPeperoBody(peperoLength bodyLength: Int) {
+    for count in 1...bodyLength {
+          count % 2 == 1 ? print(peperoBodyCustom) : print(String(peperoBodyCustom.reversed()))
     }
 }
 
-func drawPeperoBar(peperoBarLength: Int) {
-    for _ in 1...peperoBarLength {
-        print(" | | ");
+func drawPeperoBar(peperoBarLength barLength: Int) {
+    for _ in 1...barLength {
+        print(" | | ")
     }
 }
