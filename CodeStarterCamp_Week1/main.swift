@@ -52,3 +52,17 @@ func drawStickOfPepero(stick stickHeight: Int, drawWithToppings: String) {
 		print("| |")
 	}
 }
+
+func drawPepero(bodyHeight: Int, flavor: String, topping: String, stickHeight: Int) {
+	printPeperosInfo(bodyHeight, flavor, topping, stickHeight)
+	let kindOfBody = drawFlavorOfPepero(mainFlavor: flavor, withTopping: topping)
+	drawBodyOfPepero(body: bodyHeight, drawBody: kindOfBody)
+	drawStickOfPepero(stick: stickHeight, drawWithToppings: kindOfBody)
+	print("\n")
+}
+
+drawPepero(bodyHeight: 10, flavor: "***", topping: " ", stickHeight: 4)
+drawPepero(bodyHeight: 12, flavor: "***", topping: "&", stickHeight: 4)
+drawPepero(bodyHeight: 6, flavor: "|0|", topping: " ", stickHeight: 4)
+drawPepero(bodyHeight: 5, flavor: "|000|", topping: "^^", stickHeight: 4)
+drawPepero(bodyHeight: 4, flavor: "*", topping: "@", stickHeight: 3)
