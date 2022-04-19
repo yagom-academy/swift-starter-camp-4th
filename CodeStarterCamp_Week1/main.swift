@@ -8,19 +8,49 @@
 
 import Foundation
 
+/* 빼빼로만들기1 실행예시
+ 
+bodyLength = 12; stickLength = 4; choco = "***"; toping = "&"
+makePepero()
 
-//MARK: 아이스크림 그리기
-func drawIceCream() {
-    for _ in 1...8 {
-        for _ in 1...11 {
-            print("*", terminator: "")
-        }
-    print()
-    }
-    for _ in 1...4 {
-        print("    | |")
-    }
-}
+bodyLength = 12; stickLength = 6; choco = "***"; toping = "#"
+makePepero()
+
+bodyLength = 6; stickLength = 4; choco = "|0|"; toping = " "
+makePepero()
+
+//
+bodyLength = 10; stickLength = 5; choco = "##"; toping = "🔥"
+makePepero()
+
+bodyLength = 12; stickLength = 5; choco = "888"; toping = "☆"
+makePepero()
+ 
+*/
 
 
-drawIceCream()
+
+/*빼빼로만들기2 실행예시*/
+
+//MARK: 실행예시
+
+choco = "***"; topping = " "
+makePepero(body: 10, stick: 4)
+
+choco = "***"; topping = "&"
+makePepero(body: 12, stick: 4)
+
+choco = "***"; topping = "#"
+makePepero(body: 12, stick: 6)
+
+choco = "|0|"; topping = " "
+makePepero(body: 6, stick: 4)
+
+
+
+//MARK: 내마음대로 만들기
+choco = "##"; topping = "🔥"
+makePepero(body: 10, stick: 5)
+
+choco = "888"; topping = "☆"
+makePepero(body: 12, stick: 5)
