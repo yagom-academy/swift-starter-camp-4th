@@ -7,30 +7,33 @@
 
 import Foundation
 
-func drawStick(length: Int){
+
+func drawPepero(bodyLength: Int, body : String, topping : String = " ",  stickLength : Int){
+    print("<정보>")
+    print("길이: \(bodyLength)")
+    print("몸통: \(body)")
+    print("토핑: \(topping)")
+    print("막대길이: \(stickLength)\n")
+    
+    drawBody(body,topping,bodyLength)
+    drawStick(stickLength)
+    print()
+}
+
+func drawStick(_ length: Int){
     for _ in 1...length{
         print(" | |")
     }
 }
 
-func iceCream(body: String,topping : String = " "){
-    print("\(topping)\(body)")
-    print(" \(body)\(topping)")
-}
-
-func drawBody(body: String, topping : String, length: Int){
-    for _ in 1...(length/2){
-        iceCream(body: body, topping: topping)
+func drawBody(_ body: String, _ topping : String, _ length: Int){
+    for i in 1...length{
+        if i%2 == 1{
+            print("\(topping)\(body)")
+        }
+        else{print(" \(body)\(topping)")
+        }
+        
     }
 }
 
-func pepero(_ length: Int, _ body : String, _ topping : String = " ", _ stick : Int){
-    print("<정보>")
-    print("길이: \(length)")
-    print("몸통: \(body)")
-    print("토핑: \(topping)")
-    print("막대길이: \(stick)\n")
-    
-    drawBody(body: body, topping: topping, length: length)
-    drawStick(length: stick)
-}
