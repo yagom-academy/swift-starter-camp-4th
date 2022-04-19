@@ -8,22 +8,22 @@
 
 import Foundation
 
-func drawIcecream(ice_width: Int, ice_height: Int) {
-    for _ in 1...ice_height {
-        for _ in 1...ice_width {
+func drawIcecream(iceWidth: Int, iceHeight: Int) {
+    for _ in 1...iceHeight {
+        for _ in 1...iceWidth {
             print("*", terminator: "")
         }
         print()
     }
-    drawStick(top_width: ice_width)
+    drawStick(topWidth: iceWidth)
 }
 
-func drawStick(top_width: Int) {
+func drawStick(topWidth: Int) {
     for _ in 1...4 {
-        for _ in 1...(top_width/2 - 1) {
+        for _ in 1...(topWidth/2 - 1) {
             print(" ",terminator: "")
         }
-        if top_width % 2 == 1 {
+        if topWidth % 2 == 1 {
             print("| |")
         } else {
             print("||")
@@ -31,4 +31,4 @@ func drawStick(top_width: Int) {
     }
 }
 
-drawIcecream(ice_width: 11,ice_height: 8)
+drawIcecream(iceWidth: 11,iceHeight: 8)
