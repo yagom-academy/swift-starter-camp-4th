@@ -24,3 +24,9 @@ func drawBody(count: Int) {
         }
     }
 }
+
+func drawStick(len: Int) {
+    for _ in 1...len {
+        print(" | |")
+    }
+}
