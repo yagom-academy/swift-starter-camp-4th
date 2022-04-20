@@ -30,8 +30,8 @@ func drawBody (bodyLength: Int, bodyType: String) {
         for _ in 1...bodyLength/2 {
             print(bodyType)
             print(bodyType.reversed())
-            print(bodyType)
         }
+            print(bodyType)
     }
 }
 
