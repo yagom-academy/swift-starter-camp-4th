@@ -7,14 +7,6 @@
 
 import Foundation
 
-let pepero = Pepero()
-
-//makePeperoStick(stickHeight: 5)
-
-//whatTypePepero(body: "***", topping: "&")
-
-//peperoBodyLength(bodyLength: 10, body: "***", topping: "&")
-
 print("실행예시 1")
 makePepero(bodyLength: 10, bodyType: "***", toppingType: " ", stickHeight: 4)
 print("")
