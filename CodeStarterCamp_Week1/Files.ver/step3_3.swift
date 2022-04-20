@@ -8,7 +8,7 @@
 import Foundation
 //MARK: - 빼빼로 몸통 및 토핑
 
-func makePpaeppaeloBody3(body: String, toping: String) {
+func makePpaeppaeloComponent3(body: String, toping: String) {
     print(
 """
 \(toping)\(body)
@@ -17,9 +17,9 @@ func makePpaeppaeloBody3(body: String, toping: String) {
 }
 //MARK: - 몸통 길이 함수
 
-func makePpaeppaeloBodyLength3(length: Int) {
+func makePpaeppaeloBody3(length: Int) {
     for _ in 1...length / 2 {
-        makePpaeppaeloBody3(body: "***", toping: "#")
+        makePpaeppaeloComponent3(body: "***", toping: "#")
     }
     
 }
@@ -35,7 +35,7 @@ func makePpaeppaeloBar3(bar : String, length: Int) {
 
 func showPpaeppaelo3() {
     
-makePpaeppaeloBodyLength3(length: 12)
+makePpaeppaeloBody3(length: 12)
 makePpaeppaeloBar3(bar: " | |", length: 6)
     
 }

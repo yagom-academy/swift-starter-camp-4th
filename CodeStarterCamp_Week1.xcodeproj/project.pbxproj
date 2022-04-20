@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
+		90ADBC1C280DB7A5009F8C74 /* step3_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ADBC1B280DB7A5009F8C74 /* step3_1.swift */; };
+		90ADBC1E280EBE04009F8C74 /* step3_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ADBC1D280EBE04009F8C74 /* step3_2.swift */; };
+		90ADBC20280EBFDC009F8C74 /* step3_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ADBC1F280EBFDC009F8C74 /* step3_3.swift */; };
+		90ADBC22280EC057009F8C74 /* step3_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ADBC21280EC057009F8C74 /* step3_4.swift */; };
+		90ADBC27280EE56D009F8C74 /* pepeloFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ADBC26280EE56D009F8C74 /* pepeloFile.swift */; };
+		90ADBC29280FB05C009F8C74 /* step3_5_custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ADBC28280FB05C009F8C74 /* step3_5_custom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,12 @@
 /* Begin PBXFileReference section */
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		90ADBC1B280DB7A5009F8C74 /* step3_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step3_1.swift; sourceTree = "<group>"; };
+		90ADBC1D280EBE04009F8C74 /* step3_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step3_2.swift; sourceTree = "<group>"; };
+		90ADBC1F280EBFDC009F8C74 /* step3_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step3_3.swift; sourceTree = "<group>"; };
+		90ADBC21280EC057009F8C74 /* step3_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step3_4.swift; sourceTree = "<group>"; };
+		90ADBC26280EE56D009F8C74 /* pepeloFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pepeloFile.swift; sourceTree = "<group>"; };
+		90ADBC28280FB05C009F8C74 /* step3_5_custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step3_5_custom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,23 @@
 		34811DAD274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {
 			isa = PBXGroup;
 			children = (
+				90ADBC26280EE56D009F8C74 /* pepeloFile.swift */,
 				34811DAE274B938F00A1E994 /* main.swift */,
+				90ADBC23280EE4E5009F8C74 /* Files.ver */,
 			);
 			path = CodeStarterCamp_Week1;
+			sourceTree = "<group>";
+		};
+		90ADBC23280EE4E5009F8C74 /* Files.ver */ = {
+			isa = PBXGroup;
+			children = (
+				90ADBC1B280DB7A5009F8C74 /* step3_1.swift */,
+				90ADBC1D280EBE04009F8C74 /* step3_2.swift */,
+				90ADBC1F280EBFDC009F8C74 /* step3_3.swift */,
+				90ADBC21280EC057009F8C74 /* step3_4.swift */,
+				90ADBC28280FB05C009F8C74 /* step3_5_custom.swift */,
+			);
+			path = Files.ver;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +145,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90ADBC22280EC057009F8C74 /* step3_4.swift in Sources */,
 				34811DAF274B938F00A1E994 /* main.swift in Sources */,
+				90ADBC20280EBFDC009F8C74 /* step3_3.swift in Sources */,
+				90ADBC1E280EBE04009F8C74 /* step3_2.swift in Sources */,
+				90ADBC27280EE56D009F8C74 /* pepeloFile.swift in Sources */,
+				90ADBC29280FB05C009F8C74 /* step3_5_custom.swift in Sources */,
+				90ADBC1C280DB7A5009F8C74 /* step3_1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
