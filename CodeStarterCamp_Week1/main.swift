@@ -6,24 +6,9 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
 
-func makeIceCream(row: Int, col: Int) {
-    for _ in 1...col{
-        for _ in 1...row{
-            print("*", terminator: "")
-        }
-        print("")
-    }
-}
-
-func makeStick(row: Int, col: Int) {
-    for _ in 1...col{
-        for _ in 1...row{
-            print(" ", terminator: "")
-        }
-        print("| |")
-    }
-}
-makeIceCream(row: 11, col: 8)
-makeStick(row: 4, col: 4)
+totalPoki(bodyHeight: 10, pokiBody: "***", pokiTopping: "", stickLength: 4)
+totalPoki(bodyHeight: 12, pokiBody: "***", pokiTopping: "&", stickLength: 4)
+totalPoki(bodyHeight: 12, pokiBody: "***", pokiTopping: "#", stickLength: 6)
+totalPoki(bodyHeight: 6, pokiBody: "|0|", pokiTopping: "", stickLength: 4)
+totalPoki(bodyHeight: 10, pokiBody: "@@@", pokiTopping: "%", stickLength: 5) //나만의 빼빼로
