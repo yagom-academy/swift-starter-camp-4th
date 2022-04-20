@@ -8,20 +8,19 @@
 
 import Foundation
 
-func makeIceCream (line: Int) {
-    for _ in 1...line {
+func makeIceCream (height: Int) {
+    for _ in 1...height {
         print("***********")
     }
 }
 
-func makeBar (line: Int) {
-    for _ in 1...line {
+func makeBar (height: Int) {
+    for _ in 1...height {
         print("    | |")
     }
 }
 
-
-makeIceCream(line: 8)
-makeBar(line: 4)
+makeIceCream(height: 8)
+makeBar(height: 4)
 
 
