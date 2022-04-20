@@ -9,7 +9,7 @@ import Foundation
 
 func makePeperoBar(barLength: Int){
     for _ in 1...barLength{
-        print(" |  | ")
+        print(" | | ")
     }
 }
 
