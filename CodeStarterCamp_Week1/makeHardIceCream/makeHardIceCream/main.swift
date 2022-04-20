@@ -16,7 +16,7 @@ func makeHardIceCream() {
    }
 }
 
-func hardIceCreamStick() {
+func makeHardIceCreamStick() {
     for _ in 1...4 {
         for _ in 1...4 {
             print("", terminator: " ")
@@ -26,4 +26,4 @@ func hardIceCreamStick() {
 }
 
 makeHardIceCream()
-hardIceCreamStick()
+makeHardIceCreamStick()
