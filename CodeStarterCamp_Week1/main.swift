@@ -49,12 +49,16 @@ import Foundation
 
 //MARK: 파일 분리로 한방에 구현 시도
 
-//func show() {
-//showPpaeppaelo()
-//showPpaeppaelo2()
-//showPpaeppaelo3()
-//showPpaeppaelo4()
-//}
-//
-//show()
+func show() {
+showPpaeppaelo()
+showPpaeppaelo2()
+showPpaeppaelo3()
+showPpaeppaelo4()
+showPpaeppaelo5()
+}
 
+show()
+
+//MARK: 파일 하나에 구현
+//showPepelo()
+   

@@ -19,7 +19,7 @@ func makePpaeppaeloBody(body: String, toping: String) {
 //MARK: - 몸통 길이 함수
 
 func makePpaeppaeloBodyLength(length: Int) {
-    for ppaeppaeloBodyLength in 1...length / 2 {
+    for _ in 1...length / 2 {
         makePpaeppaeloBody(body: "***", toping: "")
     }
     
@@ -28,7 +28,7 @@ func makePpaeppaeloBodyLength(length: Int) {
 
 func makePpaeppaeloBar(bar : String, length: Int) {
     
-    for ppaeppaeloBar in 1...length {
+    for _ in 1...length {
         print(bar)
     }
 }

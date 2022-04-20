@@ -19,6 +19,7 @@ import Foundation
 //MARK: - 빼빼로 몸통 및 토핑
 
 func makePepeloComponent(body: String, toping: String) {
+    
 print(
 """
 \(toping)\(body)
@@ -26,15 +27,14 @@ print(
 """)
 }
 //MARK: - 몸통 길이 함수
+    
 
 func makePepeloBody(length: Int) {
-    
-    let pepeloBody: () = makePpaeppaeloBody(body: "***", toping: "")
+    let pepeloBody: () = makePepeloComponent(body: "***", toping: "")
     
     for _ in 1...length / 2 {
-        pepeloBody
+       pepeloBody
     }
-    
 }
 //MARK: - 빼빼로 바 만들기
 
@@ -45,4 +45,11 @@ func makePepeloBar(bar : String, length: Int) {
     }
 }
 //MARK: - 구현
+
+func showPepelo() {
+makePepeloBody(length: 6)
+makePepeloBar(bar: "| |", length: 4)
+}
+
+// 왜 구현안될까?
 
