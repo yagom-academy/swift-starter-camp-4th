@@ -1,5 +1,5 @@
 //
-//  step2.swift
+//  Week1Step2.swift
 //  CodeStarterCamp_Week1
 //
 //  Created by mingmac on 2022/04/17.

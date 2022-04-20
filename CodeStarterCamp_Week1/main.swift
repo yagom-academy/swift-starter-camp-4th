@@ -6,14 +6,15 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-// step2. 아이스크림 만들기 실행 예시
+// Week1Step2. 아이스크림 만들기 실행 예시
 makeIceCreamBody2()
 makeIceCreamStick2()
+print("")
 
-// step3. 빼빼로 만들기 실행 예시
-showPepero(body: "***", topping: "", bodyLength: 10, stickLength: 4)
-showPepero(body: "***", topping: "&", bodyLength: 12, stickLength: 4)
-showPepero(body: "***", topping: "#", bodyLength: 10, stickLength: 6)
-showPepero(body: "|0|", topping: "", bodyLength: 6, stickLength: 4)
-showPepero(body: "*", topping: "%", bodyLength: 6, stickLength: 4)
-showPepero(body: "*****", topping: "%", bodyLength: 6, stickLength: 3)
+// Week1Step3. 빼빼로 만들기 실행 예시
+combinePepero(body: "***", topping: "", bodyLength: 10, stickLength: 4)
+combinePepero(body: "***", topping: "&", bodyLength: 12, stickLength: 4)
+combinePepero(body: "***", topping: "#", bodyLength: 10, stickLength: 6)
+combinePepero(body: "|0|", topping: "", bodyLength: 6, stickLength: 4)
+combinePepero(body: "*", topping: "%", bodyLength: 6, stickLength: 4)
+combinePepero(body: "**", topping: "%", bodyLength: 6, stickLength: 3)
