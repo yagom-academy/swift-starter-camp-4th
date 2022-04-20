@@ -7,19 +7,19 @@
 
 import Foundation
 
-func drawStick (stickLength: Int) {
+func drawStick(stickLength: Int) {
     for _ in 1...stickLength {
         print(" | |")
     }
 }
 
-func drawBodyType (body: String, topping: String) -> String {
+func drawBodyType(body: String, topping: String) -> String {
     var bodyType: String = ""
     bodyType = "\(topping)\(body) "
     return bodyType
 }
 
-func drawBody (bodyLength: Int, bodyType: String) {
+func drawBody(bodyLength: Int, bodyType: String) {
     let bodyTypeReversed = String(bodyType.reversed())
     if (bodyLength % 2 == 0) {
         for _ in 1...bodyLength/2 {
@@ -35,7 +35,7 @@ func drawBody (bodyLength: Int, bodyType: String) {
     }
 }
 
-func drawPepero (bodyLength: Int, body: String, topping: String, stickLength: Int) {
+func drawPepero(bodyLength: Int, body: String, topping: String, stickLength: Int) {
     print("""
 <정보>
 길이: \(bodyLength)
