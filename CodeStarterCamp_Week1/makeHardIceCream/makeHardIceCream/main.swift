@@ -1,14 +1,13 @@
 //
 //  main.swift
-//  CodeStarterCamp_Week1
+//  makeHardIceCream
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by insu on 2022/04/18.
 //
 
 import Foundation
 
-func hardIceCream() {
+func makeHardIceCream() {
    for _ in 1...8 {
         for _ in 1...11 {
             print("*", terminator: "")
@@ -17,10 +16,7 @@ func hardIceCream() {
    }
 }
 
-hardIceCream()
-
-
-func iceCreamStick() {
+func makeHardIceCreamStick() {
     for _ in 1...4 {
         for _ in 1...4 {
             print("", terminator: " ")
@@ -29,4 +25,5 @@ func iceCreamStick() {
     }
 }
 
-iceCreamStick()
+makeHardIceCream()
+makeHardIceCreamStick()
