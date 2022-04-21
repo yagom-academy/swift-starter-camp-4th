@@ -70,9 +70,9 @@ func combinePepero(body: String, topping: String, bodyLength: Int, stickLength: 
             막대 길이 : \(stickLength)
             """, ("\n")
     )
-    let getPeperoBody = drawPeperoBody(bodyMaterial: body, topping: topping)
+    let peperoBody = drawPeperoBody(bodyMaterial: body, topping: topping)
     
-    drawBodyLength(bodyLength: bodyLength, drawBodyShape: getPeperoBody)
+    drawBodyLength(bodyLength: bodyLength, drawBodyShape: peperoBody)
     drawStickLength(stickLength: stickLength, topping: topping, body: body)
     print("")
 }
