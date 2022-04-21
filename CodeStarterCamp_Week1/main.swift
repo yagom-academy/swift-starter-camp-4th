@@ -9,13 +9,13 @@
 import Foundation
 
 func drawIceCream(){
-    let starHorizonCount = 11
-    let starVerticalCount = 8
+    let starWidthCount = 11
+    let starHeightCount = 8
     var star = ""
     var stick = ""
     func drawHard(){
-        for _ in 0..<starVerticalCount {
-            for _ in 0..<starHorizonCount {
+        for _ in 0..<starWidthCount {
+            for _ in 0..<starHeightCount {
                 star += "*"
             }
             star += "\n"
@@ -24,10 +24,10 @@ func drawIceCream(){
     
     func drawStick(){
         var whileCount = 0
-        let stickVerticalCount = starVerticalCount / 2        
-        while whileCount < stickVerticalCount {
+        let starHeightCount = starHeightCount / 2
+        while whileCount < starWidthCount {
             var count = 0
-            while count <= stickVerticalCount {
+            while count <= starWidthCount {
                 stick += " "
                 count += 1
             }
