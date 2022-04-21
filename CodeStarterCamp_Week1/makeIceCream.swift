@@ -11,7 +11,7 @@ import Foundation
 func makeIceCream(iceCreamWidth: Int, iceCreamHeight: Int, barHeight: Int) {
     makeIceCreamBody(iceCreamWidth: iceCreamWidth, iceCreamHeight: iceCreamHeight)
     makeIceCreamBar(iceCreamWidth: iceCreamWidth, barHeight: barHeight)
-}
+    }
 
 func makeIceCreamBody(iceCreamWidth: Int, iceCreamHeight: Int) {
     for _ in 1...iceCreamHeight {
@@ -40,4 +40,4 @@ func makeIceCreamBar(iceCreamWidth: Int, barHeight: Int) {
     }
 }
 
-//makeIceCream(iceCreamWidth: 16, iceCreamHeight: 5, barHeight: 2)
+makeIceCream(iceCreamWidth: 16, iceCreamHeight: 5, barHeight: 2)

@@ -8,6 +8,27 @@
 
 import Foundation
 
+func makePepero(bodyHeight: Int, bodyShape: String, topping: String, barHeight: Int) {
+    printPeperoInfo(
+        bodyHeight: bodyHeight,
+        bodyShape: bodyShape,
+        topping: topping,
+        barHeight: barHeight
+    )
+    makePeperoBody(bodyHeight: bodyHeight, bodyShape: bodyShape, topping: topping)
+    makePeperoBar(barHeight: barHeight)
+}
+
+func printPeperoInfo(bodyHeight: Int, bodyShape: String, topping: String, barHeight: Int) {
+    print("""
+          <정보>
+          길이: \(bodyHeight)
+          몸통: \(bodyShape)
+          토핑: \(topping)
+          막대길이: \(bodyHeight)
+          """)
+}
+
 func makePeperoBody(bodyHeight: Int, bodyShape: String, topping: String) {
     if topping == "" {
         for _ in 1...bodyHeight {
@@ -30,11 +51,7 @@ func makePeperoBar(barHeight: Int) {
     }
 }
 
-func makePepero(
-    bodyHeight: Int, bodyShape: String, topping: String, barHeight: Int) {
-    print("<정보>\n길이: \(bodyHeight)\n몸통: \(bodyShape)\n토핑: \(topping) \n막대길이: \(barHeight)\n")
-    makePeperoBody(bodyHeight: bodyHeight, bodyShape: bodyShape, topping: topping)
-    makePeperoBar(barHeight: barHeight)
-}
-
-makePepero(bodyHeight: 7, bodyShape: "***", topping: "$", barHeight: 6)
+makePepero(bodyHeight: 10, bodyShape: "***", topping: "", barHeight: 4)
+makePepero(bodyHeight: 12, bodyShape: "***", topping: "&", barHeight: 4)
+makePepero(bodyHeight: 12, bodyShape: "***", topping: "#", barHeight: 6)
+makePepero(bodyHeight: 6, bodyShape: "|0|", topping: "", barHeight: 4)
