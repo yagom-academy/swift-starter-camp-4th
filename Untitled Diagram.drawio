@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net" modified="2022-04-21T03:07:29.378Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.2 Safari/605.1.15" etag="Oi9KE1xGfp0Ji4z2gjQU" version="17.4.4" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="2178" dy="819" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="mW7dTDMSiYalMqSjouTT-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="200" as="targetPoint" />
+            <mxPoint x="340" y="170" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mW7dTDMSiYalMqSjouTT-1" value="func makeIcecream&amp;nbsp;&lt;br&gt;함수 실행&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="200" y="80" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mW7dTDMSiYalMqSjouTT-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="mW7dTDMSiYalMqSjouTT-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mW7dTDMSiYalMqSjouTT-12" value="func makeIcecreamBody&lt;br&gt;실행" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="200" y="210" width="280" height="71.94" as="geometry" />
+        </mxCell>
+        <mxCell id="mW7dTDMSiYalMqSjouTT-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="mW7dTDMSiYalMqSjouTT-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="341" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mW7dTDMSiYalMqSjouTT-15" value="func makeWoodStick&lt;br&gt;실행" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="201" y="500" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mW7dTDMSiYalMqSjouTT-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="mW7dTDMSiYalMqSjouTT-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="341" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mW7dTDMSiYalMqSjouTT-19" value="for _ &amp;nbsp;in &amp;nbsp;1 ... height {&amp;nbsp;&lt;br&gt;print( &quot; ***********&amp;nbsp;&quot;)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="200" y="320" width="282" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mW7dTDMSiYalMqSjouTT-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="mW7dTDMSiYalMqSjouTT-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mW7dTDMSiYalMqSjouTT-20" value="매개변수값 : &lt;br&gt;bodyheight: 9&lt;br&gt;sitckheight: 4&lt;br&gt;값 입력" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-90" y="90" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mW7dTDMSiYalMqSjouTT-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="mW7dTDMSiYalMqSjouTT-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="246" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mW7dTDMSiYalMqSjouTT-22" value="makeIcecream 의 매개변수 값 bodyheight: 4와&lt;br&gt;makeIcecreambody의 매개변수 값인 height 값을 매칭&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-120" y="215.97" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mW7dTDMSiYalMqSjouTT-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="mW7dTDMSiYalMqSjouTT-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mW7dTDMSiYalMqSjouTT-23" value="makeIcecream 의 매개변수 값 stickheight : 4와&lt;br&gt;makeIcecreambody의 매개변수 값인 height 값을 매칭&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-120" y="500" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mW7dTDMSiYalMqSjouTT-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="mW7dTDMSiYalMqSjouTT-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="341" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mW7dTDMSiYalMqSjouTT-25" value="for _ &amp;nbsp;in &amp;nbsp;1 ... height {&amp;nbsp;&lt;br&gt;print( &quot; &amp;nbsp; | | &quot;)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="200" y="590" width="282" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mW7dTDMSiYalMqSjouTT-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="mW7dTDMSiYalMqSjouTT-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="347" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mW7dTDMSiYalMqSjouTT-26" value="&lt;span&gt;1부터 height 번째 까지&amp;nbsp;&lt;br&gt;&amp;nbsp;&quot; *********** &quot; &amp;nbsp;출력&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="212" y="410" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mW7dTDMSiYalMqSjouTT-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="mW7dTDMSiYalMqSjouTT-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="347" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mW7dTDMSiYalMqSjouTT-27" value="&lt;span&gt;1부터 height 번째 까지&amp;nbsp;&lt;br&gt;&amp;nbsp;&quot;&lt;/span&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;| | &lt;span&gt;&quot; &amp;nbsp;출력&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="212" y="680" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mW7dTDMSiYalMqSjouTT-37" value="끝" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="210" y="770" width="260" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
