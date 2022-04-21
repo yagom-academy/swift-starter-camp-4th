@@ -8,26 +8,28 @@
 
 import Foundation
 
-var bodyLength: Int = 12
-var bodyShape: String = "***"
+var bodyLength: Int = 6
+var bodyShape: String = "|0|"
 var topping: String = "&"
-var stickLength: Int = 6
+var stickLength: Int = 3
+var lineCount: Int = 0
 
-func printLayer(lineCount: Int) {
+func printLayer(_topping: String, _body: String) {
     if topping.isEmpty {
-        print(" \(bodyShape)")
+        print(" \(_body)")
     } else {
         if lineCount % 2 == 1 {
-            print("\(topping)\(bodyShape)")
+            print("\(_topping)\(_body)")
         } else {
-            print(" \(bodyShape)\(topping)")
+            print(" \(_body)\(_topping)")
         }
     }
 }
 
 func printBody(bodyLen: Int) {
-    for i in 1...bodyLen {
-        printLayer(lineCount: i)
+    for _ in 1...bodyLen {
+        lineCount += 1
+        printLayer(_topping: topping, _body: bodyShape)
     }
 }
 
