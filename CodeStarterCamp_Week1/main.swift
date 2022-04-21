@@ -11,13 +11,13 @@ import Foundation
 var bodyLength: Int = 12
 var bodyShape: String = "***"
 var topping: String = "&"
-var stickLength: Int = 4
+var stickLength: Int = 6
 
-func drawBody(count: Int) {
+func printLayer(lineCount: Int) {
     if topping.isEmpty {
         print(" \(bodyShape)")
     } else {
-        if count % 2 == 1 {
+        if lineCount % 2 == 1 {
             print("\(topping)\(bodyShape)")
         } else {
             print(" \(bodyShape)\(topping)")
@@ -25,7 +25,13 @@ func drawBody(count: Int) {
     }
 }
 
-func drawStick(len: Int) {
+func printBody(bodyLen: Int) {
+    for i in 1...bodyLen {
+        printLayer(lineCount: i)
+    }
+}
+
+func printStick(len: Int) {
     for _ in 1...len {
         print(" | |")
     }
@@ -42,13 +48,11 @@ func printInfo() {
           """)
 }
 
-func drawPepero() {
+func printPepero() {
     printInfo()
-    for i in 1...bodyLength {
-        drawBody(count: i)
-    }
-    drawStick(len: stickLength)
+    printBody(bodyLen: bodyLength)
+    printStick(len: stickLength)
 }
 
-drawPepero()
+printPepero()
 
