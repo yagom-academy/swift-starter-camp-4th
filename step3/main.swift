@@ -7,9 +7,10 @@
 
 import Foundation
 
-var peperoBody = ""
+
 
 func makePeperoBody(body: String, topping: String) {
+    var peperoBody = ""
     if topping == " " {
         peperoBody = " \(body)"
     }
