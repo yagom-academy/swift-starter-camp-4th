@@ -7,22 +7,22 @@
 
 import Foundation
 
-func makeIcecreamBody(cream: Int) {
-    for _ in 1 ... cream {
+func makeIcecreamBody(height: Int) {
+    for _ in 1 ... height{
         print("***********")
     }
 }
 
-func namooStick(stick: Int) {
-    for _ in 1 ... stick {
+func makeWoodStick(height: Int) {
+    for _ in 1 ... height {
         print("    | |")
     }
 }
 
-func makeIcecream(cream:Int , stick: Int) {
-    makeIcecreamBody(cream: cream)
-    namooStick(stick: stick)
+func makeIcecream(bodyheight:Int, stickheight: Int) {
+    makeIcecreamBody(height: bodyheight)
+    makeWoodStick(height: stickheight)
 }
 
-makeIcecream(cream: 9, stick: 4)
+makeIcecream(bodyheight: 9, stickheight: 4)
 
