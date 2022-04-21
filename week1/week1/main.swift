@@ -19,10 +19,10 @@ func makeWoodStick(height: Int) {
     }
 }
 
-func makeIcecream(bodyheight:Int, stickheight: Int) {
+func makeIcecreamOf(bodyheight:Int, stickheight: Int) {
     makeIcecreamBody(height: bodyheight)
     makeWoodStick(height: stickheight)
 }
 
-makeIcecream(bodyheight: 9, stickheight: 4)
+makeIcecreamOf(bodyheight: 9, stickheight: 4)
 
