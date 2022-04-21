@@ -6,57 +6,15 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
-
-// MARK: 1번 방법
-
-// 변수 선언
-var body: String = "***********"
-var stick: String = "    | |"
-
-// 함수 구현
-func makeIceCreamBody() {
-    for _ in 1...8 {
-        print(body)
-    }
-}
-
-func makeIceCreamStick() {
-    for _ in 1...4 {
-        print(stick)
-    }
-}
-
-// 함수 실행
-makeIceCreamBody()
-makeIceCreamStick()
-
-// MARK: 2번 방법
-
-// 변수 선언
-var body2: String = "*"
-var stick2: String = "| |"
-
-// 함수 구현
-func makeIceCreamBody2() {
-    for _ in 1...8 {
-        for _ in 1...11 {
-            print(body2, terminator: "")
-        }
-        print("")
-    }
-}
-
-func makeIceCreamStick2() {
-    for _ in 1...4{
-        for _ in 1...4 {
-            print(" ", terminator: "")
-        }
-        print(stick2)
-    }
-
-}
-
-// 함수 실행
+// Week1Step2. 아이스크림 만들기 실행 예시
 makeIceCreamBody2()
 makeIceCreamStick2()
+print("")
+
+// Week1Step3. 빼빼로 만들기 실행 예시
+combinePepero(body: "***", topping: "", bodyLength: 10, stickLength: 4)
+combinePepero(body: "***", topping: "&", bodyLength: 12, stickLength: 4)
+combinePepero(body: "***", topping: "#", bodyLength: 10, stickLength: 6)
+combinePepero(body: "|0|", topping: "", bodyLength: 6, stickLength: 4)
+combinePepero(body: "*", topping: "%", bodyLength: 6, stickLength: 4)
+combinePepero(body: "**", topping: "%", bodyLength: 6, stickLength: 3)
