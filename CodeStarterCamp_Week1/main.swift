@@ -14,8 +14,8 @@ func drawIceCream(){
     var star = ""
     var stick = ""
     func drawHard(){
-        for _ in 0..<starWidthCount {
-            for _ in 0..<starHeightCount {
+        for _ in 0..<starHeightCount {
+            for _ in 0..<starWidthCount {
                 star += "*"
             }
             star += "\n"
@@ -24,10 +24,10 @@ func drawIceCream(){
     
     func drawStick(){
         var whileCount = 0
-        let starHeightCount = starHeightCount / 2
-        while whileCount < starWidthCount {
+        let stickWidthCount = starHeightCount / 2
+        while whileCount < stickWidthCount {
             var count = 0
-            while count <= starWidthCount {
+            while count < stickWidthCount {
                 stick += " "
                 count += 1
             }
