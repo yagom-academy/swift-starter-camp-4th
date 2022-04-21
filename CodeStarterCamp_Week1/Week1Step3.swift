@@ -8,7 +8,6 @@
 import Foundation
 
 func drawPeperoBody(bodyMaterial:String, topping:String) -> String {
-    let bodyMenu:String = bodyMaterial
     var addTopping:String = topping
     let numberOfTopping = topping.count
     var space:String = " "
@@ -20,7 +19,7 @@ func drawPeperoBody(bodyMaterial:String, topping:String) -> String {
             space += space
         }
     }
-    let bodyShape:String = "\(addTopping)\(bodyMenu)\(space)"
+    let bodyShape:String = "\(addTopping)\(bodyMaterial)\(space)"
     return bodyShape
 }
 
@@ -37,26 +36,24 @@ func drawBodyLength(bodyLength:Int, drawBodyShape:String) {
 }
 
 func drawStickLength(stickLength:Int, topping:String, body:String) {
-    let toppingMenu:String = topping
-    let bodyMenu:String = body
     for _ in 1...stickLength {
-        if toppingMenu.isEmpty {
-            for _ in 0...toppingMenu.count {
+        if topping.isEmpty {
+            for _ in 0...topping.count {
                 print("", terminator: " ")
             }
         } else {
-            for _ in 1...toppingMenu.count {
+            for _ in 1...topping.count {
                 print("", terminator: " ")
             }
         }
-        if bodyMenu.count <= 2 {
-            for _ in 1...bodyMenu.count {
+        if body.count <= 2 {
+            for _ in 1...body.count {
                 print("|", terminator: "")
             }
             print("")
         } else {
             print("|", terminator: "")
-            for _ in 1...bodyMenu.count - 2{
+            for _ in 1...body.count - 2{
                 print(" ", terminator: "")
             }
             print("|")
