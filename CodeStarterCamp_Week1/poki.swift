@@ -6,30 +6,29 @@ import Foundation
 
 func drawPokiStick(stickLength: Int) {
     
-    for _ in 1...stickLength{
+    for _ in 1...stickLength {
         print(" | |")
     }
-
 }
 
 func drawPoki(pokiBody: String, pokiTopping: String) {
 
-    if pokiTopping == ""{
+    if pokiTopping == "" {
         print(" \(pokiTopping)\(pokiBody)\n \(pokiBody)\(pokiTopping)")
         
-    }else{
+    } else {
         print("\(pokiTopping)\(pokiBody)\n \(pokiBody)\(pokiTopping)")
     }
 }
 
-func drawPokiBody(bodyHeight: Int, pokiBody: String, pokiTopping: String){
+func drawPokiBody(bodyHeight: Int, pokiBody: String, pokiTopping: String) {
     
-    for _ in 1...bodyHeight/2{
+    for _ in 1...bodyHeight/2 {
         drawPoki(pokiBody: pokiBody, pokiTopping: pokiTopping)
     }
 }
 
-func totalPoki(bodyHeight: Int, pokiBody: String, pokiTopping: String, stickLength: Int){
+func totalPoki(bodyHeight: Int, pokiBody: String, pokiTopping: String, stickLength: Int) {
     
     drawPokiBody(bodyHeight: bodyHeight, pokiBody: pokiBody, pokiTopping: pokiTopping)
     drawPokiStick(stickLength: stickLength)
