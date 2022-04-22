@@ -12,19 +12,16 @@ func printIce() {
     for count in 1...8 {
         print("***********")
     }
-    
 }
 
 func printBar() {
-    for count in 1...4{
-    print("    | |    ")
+    for count in 1...4 {
+        print("    | |    ")
     }
-    
 }
+
 printIce()
 printBar()
-
-
 
 func drawIce() {
     print("***********")
@@ -40,4 +37,3 @@ for star in 1...8 {
 for bar in 1...4 {
     drawBar()
 }
-
