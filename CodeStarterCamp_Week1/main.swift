@@ -35,4 +35,4 @@ func makeGugudan(xdan: Int) {
     }
 }
 
-makeGugudan(xdan: 3)
+makeGugudan(xdan: 18)
