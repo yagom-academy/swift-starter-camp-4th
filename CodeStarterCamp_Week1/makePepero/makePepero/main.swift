@@ -36,3 +36,30 @@ makeNormalPepero(peperobodylength: 10)
 makePeperoBar(peperoBarlength: 4)
 
 
+func makeToppingPepero1(peperobodylength: Int) {
+    
+    for count in 1...peperobodylength {
+        if count % 2 == 0 {
+            print(" ", terminator: "")
+            for _ in 1...3 {
+                print(peperoBody, terminator: "")
+            }
+            print(peperoTopping)
+        }
+        
+        else {
+            print(peperoTopping, terminator: "")
+            
+            for _ in 1...3 {
+                print(peperoBody, terminator: "")
+            }
+            print(" ")
+        }
+    }
+}
+
+makeToppingPepero1(peperobodylength: 12)
+makePeperoBar(peperoBarlength: 4)
+
+
+
