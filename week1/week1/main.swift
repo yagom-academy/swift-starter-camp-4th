@@ -7,21 +7,21 @@
 
 import Foundation
 
-func makeIcecreamBody(height: Int) {
+func makeIcecreamBodyOf(height: Int) {
     for _ in 1 ... height{
         print("***********")
     }
 }
 
-func makeWoodStick(height: Int) {
+func makeWoodStickOf(height: Int) {
     for _ in 1 ... height {
         print("    | |")
     }
 }
 
 func makeIcecreamOf(bodyheight:Int, stickheight: Int) {
-    makeIcecreamBody(height: bodyheight)
-    makeWoodStick(height: stickheight)
+    makeIcecreamBodyOf(height: bodyheight)
+    makeWoodStickOf(height: stickheight)
 }
 
 makeIcecreamOf(bodyheight: 9, stickheight: 4)
