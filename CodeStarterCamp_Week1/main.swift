@@ -17,27 +17,40 @@ print("""
 let (basic, nude) = ("***","|0|")
 let (none, crunch, almond, air) = (" ", "#", "&", " ")
 
-//var peperoType: String
-//var peperoOption: String
+func buildFinalPepero(iWant peperoType: String, with peperoOption: String, sizeOf peperoLength: (choco: Int, stick: Int)){
+    print("<정보>", "길이: \(peperoLength.choco)", "몸통: \(peperoType)", "토핑: \(peperoOption)", "막대길이: \(peperoLength.stick)", separator: "\n", terminator: "\n\n")
+    makePeperoBody(type: peperoType, option: peperoOption, length: (choco: peperoLength.choco, stick: peperoLength.stick))
+    makePeperoStick(peperoLength: (choco: peperoLength.choco, stick: peperoLength.stick))
+    print("\n")
+}
 
-
-func buildPepero(iWant peperoType: String, with peperoOption: String, sizeOf peperoLength: (choco: Int, stick: Int)){
-    let peperoLayorOdd = peperoOption + peperoType + air
-    let peperoLayorEven = air + peperoType + peperoOption
+func makePeperoBody(type peperoType: String, option peperoOption: String, length peperoLength: (choco: Int, stick: Int)) {
     if peperoLength.choco % 2 == 0 {
         for _ in 1...peperoLength.choco / 2 {
-            print(peperoLayorOdd, peperoLayorEven, separator: "\n")
+            makePeperoLayor(type: peperoType, option: peperoOption)
         }
     }
     else if peperoLength.choco % 2 != 0 {
         for _ in 1...peperoLength.choco / 2 {
-            print(peperoLayorOdd, peperoLayorEven, separator: "\n")
+            makePeperoLayor(type: peperoType, option: peperoOption)
         }
-        print(peperoLayorOdd)
+        print(peperoOption + peperoType + air)
     }
+}
+
+func makePeperoLayor(type peperoType: String, option peperoOption: String) {
+    let peperoLayorOdd = peperoOption + peperoType + air
+    let peperoLayorEven = air + peperoType + peperoOption
+    print(peperoLayorOdd, peperoLayorEven, separator: "\n")
+}
+
+func makePeperoStick(peperoLength: (choco: Int, stick: Int)) {
     for _ in 1...peperoLength.stick {
         print(" | | ")
     }
 }
 
-buildPepero(iWant: basic, with: crunch, sizeOf: (choco: 11, stick: 3))
+buildFinalPepero(iWant: basic, with: none, sizeOf: (choco: 10, stick: 4))   //실행 예시 1
+buildFinalPepero(iWant: basic, with: almond, sizeOf: (choco: 12, stick: 4)) //실행 예시 2
+buildFinalPepero(iWant: basic, with: crunch, sizeOf: (choco: 12, stick: 6)) //실행 예시 3
+buildFinalPepero(iWant: nude, with: none, sizeOf: (choco: 6, stick: 4))     //실행 예시 4
