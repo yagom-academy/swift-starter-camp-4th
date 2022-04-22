@@ -24,4 +24,15 @@ func makeNormalPepero(peperobodylength: Int) {
 
 }
 
+func makePeperoBar(peperoBarlength: Int) {
+    for _ in 1...peperoBarlength {
+        for _ in 1...2 {
+            print(" |", terminator: "")
+        }
+        print("")
+    }
+}
+makeNormalPepero(peperobodylength: 10)
+makePeperoBar(peperoBarlength: 4)
+
 
