@@ -22,14 +22,14 @@ func drawBodyType(body: String, topping: String) -> String {
 func drawBody(bodyLength: Int, bodyType: String) {
     let bodyTypeReversed = String(bodyType.reversed())
     if (bodyLength % 2 == 0) {
-        for _ in 1...bodyLength/2 {
+        for _ in 1...bodyLength / 2 {
             print(bodyType)
             print(bodyTypeReversed)
         }
     } else {
-        for _ in 1...bodyLength/2 {
+        for _ in 1...bodyLength / 2 {
             print(bodyType)
-            print(bodyType.reversed())
+            print(bodyTypeReversed)
         }
             print(bodyType)
     }
