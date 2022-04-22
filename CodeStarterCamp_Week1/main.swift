@@ -40,8 +40,6 @@ showPpaeppaelo5()
 
 show()
 
-//MARK: 파일 하나에 구현
-//showPepelo()
-   
-//type(of: pepeloBody)
+//MARK: pepeloFile 성공
+showPepelo()
 
