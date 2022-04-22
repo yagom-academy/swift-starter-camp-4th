@@ -6,6 +6,8 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
+makeIceCream(row: 11, col: 8)
+makeStick(row: 4, col: 4)
 
 totalPoki(bodyHeight: 10, pokiBody: "***", pokiTopping: "", stickLength: 4)
 totalPoki(bodyHeight: 12, pokiBody: "***", pokiTopping: "&", stickLength: 4)
