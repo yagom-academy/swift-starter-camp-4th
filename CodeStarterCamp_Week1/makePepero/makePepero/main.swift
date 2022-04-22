@@ -88,3 +88,13 @@ func makeToppingPepero2(peperobodylength: Int) {
 makeToppingPepero2(peperobodylength: 12)
 makePeperoBar(peperoBarlength: 6)
 
+func makeNudePepero(peperoBodylength: Int) {
+    peperoBody = "|0|"
+    for _ in 1...peperoBodylength {
+        print(" "+peperoBody)
+    }
+}
+
+makeNudePepero(peperoBodylength: 6)
+makePeperoBar(peperoBarlength: 4)
+
