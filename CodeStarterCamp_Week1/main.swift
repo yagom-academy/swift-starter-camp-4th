@@ -8,5 +8,4 @@
 
 import Foundation
 
-var topping = " "
-pepero(sticklen: 4, bodylen: 12, body: "***", topping: "+")
+pepero(sticklen: 4, bodylen: 12, body: "***", topping: "@")
