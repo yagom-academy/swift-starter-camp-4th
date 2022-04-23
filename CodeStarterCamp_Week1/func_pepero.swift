@@ -7,15 +7,12 @@
 
 import Foundation
 
-
-// 길이(Int)에 따른 막대를 그리는 함수
 func printPeperoStick(len: Int) {
     for _ in 1...len {
         print(" | |")
     }
 }
 
-// 몸통(String), 토핑(String)을 매개 변수로 받아 토핑과 몸통을 그리는 함수
 func printPeperoBody(body: String, topping: String, len: Int) {
     for count in 1...len {
         if count % 2 == 0 {
@@ -27,7 +24,6 @@ func printPeperoBody(body: String, topping: String, len: Int) {
     }
 }
 
-// 각종 매개변수를 받아 위의 세 메서드를 호출하는 함수
 func pepero(sticklen: Int, bodylen: Int, body: String, topping: String)
 {
     print("<정보>")
