@@ -8,5 +8,4 @@
 
 import Foundation
 
-printBody(width: 6, height: 5)
-printStick(width: 3, height: 3)
+pepero(sticklen: 4, bodylen: 12, body: "***", topping: "@")
