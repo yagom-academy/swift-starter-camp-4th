@@ -17,3 +17,9 @@ func makePeperoBar(peperoBarlength: Int) {
     }
 }
 
+func makeToppingPepero(peperoBodylength: Int, peperoTopping: String, peperoBody: String) {
+    for _ in 1...peperoBodylength/2 {
+        print(peperoTopping + peperoBody)
+        print(" " + peperoBody + peperoTopping)
+    }
+}
