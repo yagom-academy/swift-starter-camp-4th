@@ -23,3 +23,10 @@ func makeToppingPepero(peperoBodylength: Int, peperoTopping: String, peperoBody:
         print(" " + peperoBody + peperoTopping)
     }
 }
+
+func makeNormalPepero(peperoBodylength: Int, peperoBody: String) {
+    for _ in 1...peperoBodylength {
+        print(" " + peperoBody)
+    }
+}
+
