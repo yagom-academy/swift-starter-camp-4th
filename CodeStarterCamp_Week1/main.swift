@@ -31,7 +31,7 @@ func makeNormalPepero(peperoBodylength: Int, peperoBody: String) {
 }
 func makePersonalpepero(peperoBodylength: Int, peperoBody: String, peperoTopping: String, peperoBarlength: Int) {
     print("<정보>")
-    print("길이: \(peperoBarlength)")
+    print("길이: \(peperoBodylength)")
     print("몸통: \(peperoBody)")
     print("토핑: \(peperoTopping)")
     print("막대 길이: \(peperoBarlength)")
@@ -43,3 +43,8 @@ func makePersonalpepero(peperoBodylength: Int, peperoBody: String, peperoTopping
         makePeperoBar(peperoBarlength: peperoBarlength)
     }
 }
+
+makePersonalpepero(peperoBodylength: 10, peperoBody: "***", peperoTopping: "", peperoBarlength: 4)
+makePersonalpepero(peperoBodylength: 12, peperoBody: "***", peperoTopping: "&", peperoBarlength: 4)
+makePersonalpepero(peperoBodylength: 12, peperoBody: "***", peperoTopping: "#", peperoBarlength: 6)
+makePersonalpepero(peperoBodylength: 6, peperoBody: "|0|", peperoTopping: "", peperoBarlength: 4)
