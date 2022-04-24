@@ -29,4 +29,17 @@ func makeNormalPepero(peperoBodylength: Int, peperoBody: String) {
         print(" " + peperoBody)
     }
 }
-
+func makePersonalpepero(peperoBodylength: Int, peperoBody: String, peperoTopping: String, peperoBarlength: Int) {
+    print("<정보>")
+    print("길이: \(peperoBarlength)")
+    print("몸통: \(peperoBody)")
+    print("토핑: \(peperoTopping)")
+    print("막대 길이: \(peperoBarlength)")
+    if peperoTopping == "" {
+        makeNormalPepero(peperoBodylength: peperoBodylength, peperoBody: peperoBody)
+        makePeperoBar(peperoBarlength: peperoBarlength)
+    } else {
+        makeToppingPepero(peperoBodylength: peperoBodylength, peperoTopping: peperoTopping, peperoBody: peperoBody)
+        makePeperoBar(peperoBarlength: peperoBarlength)
+    }
+}
