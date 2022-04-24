@@ -1,38 +1,19 @@
 //
-//  main.swift
+//  makepepero.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by 김나연 on 2022/04/24.
 //
 
 import Foundation
 
-func makeIcecreamBody() {
-    for _ in 1...8{
-        for _ in 1...11 {
-            print("*", terminator: "")
+
+func makePeperoBar(peperoBarlength: Int) {
+    for _ in 1...peperoBarlength {
+        for _ in 1...2 {
+            print(" |", terminator: "")
         }
         print("")
     }
 }
 
-func makeIcecreamBar() {
-    for _ in 1...4 {
-        for _ in 1...4 {
-            print(" ", terminator: "")
-        }
-        print("| |")
-    }
-}
-
-makeIcecreamBody()
-makeIcecreamBar()
-
-func makeGugudan(xdan: Int) {
-    for i in 1...9 {
-        print("\(xdan) x \(i) = \(xdan * i)")
-    }
-}
-
-makeGugudan(xdan: 18)

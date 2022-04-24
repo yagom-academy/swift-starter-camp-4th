@@ -45,9 +45,7 @@ func makeToppingPepero1(peperobodylength: Int) {
                 print(peperoBody, terminator: "")
             }
             print(peperoTopping)
-        }
-        
-        else {
+        } else {
             print(peperoTopping, terminator: "")
             
             for _ in 1...3 {
@@ -72,9 +70,7 @@ func makeToppingPepero2(peperobodylength: Int) {
                 print(peperoBody, terminator: "")
             }
             print(peperoTopping)
-        }
-        
-        else {
+        } else {
             print(peperoTopping, terminator: "")
             
             for _ in 1...3 {
