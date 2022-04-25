@@ -9,7 +9,7 @@ import Foundation
 
 
 
-class Step2Done {
+class IceCream {
 
 func makeIceCream() {
     let iceLayer = "**********"

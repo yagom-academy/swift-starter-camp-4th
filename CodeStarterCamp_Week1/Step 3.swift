@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Step3Done {
+class Pepero {
     func makeWholePepero(body: String, topping: String, length: Int, stickLength: Int) {
      
         printInformation(body: body, topping: topping, length: length, stickLength: stickLength)
@@ -25,7 +25,7 @@ class Step3Done {
     }
     
     
-    func makePeperoBody(body: String, topping: String ,length: Int) {
+    func makePeperoBody(body: String, topping: String, length: Int) {
         for count in 1...length {
             if count % 2 == 1{
             makeOddPeperoBodyLayer(body: body, topping: topping)

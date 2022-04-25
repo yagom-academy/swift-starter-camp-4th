@@ -8,24 +8,24 @@
 import Foundation
 
 /*  Step 2 아이스크림 만들기  */
-let step2 = Step2Done()
+let step2IceCream = IceCream()
 
-//step2.makeIceCream()
-//step2.makeIceCreamBar()
+//step2IceCream.makeIceCream()
+//step2IceCream.makeIceCreamBar()
 
 
 /* Step 3 빼빼로 만들기   */
 
-let step3 = Step3Done()
+let step3Pepero = Pepero()
 
-step3.makeWholePepero(body: "***", topping: " ", length: 10, stickLength: 4)
+step3Pepero.makeWholePepero(body: "***", topping: " ", length: 10, stickLength: 4)
 
-step3.makeWholePepero(body: "***", topping: "&", length: 12, stickLength: 4)
+step3Pepero.makeWholePepero(body: "***", topping: "&", length: 12, stickLength: 4)
 
-step3.makeWholePepero(body: "***", topping: "#", length: 12, stickLength: 6)
+step3Pepero.makeWholePepero(body: "***", topping: "#", length: 12, stickLength: 6)
 
-step3.makeWholePepero(body: "|0|", topping: " ", length: 6, stickLength: 4)
+step3Pepero.makeWholePepero(body: "|0|", topping: " ", length: 6, stickLength: 4)
 
-step3.makeWholePepero(body: "***", topping: "^", length: 13, stickLength: 6)
+step3Pepero.makeWholePepero(body: "***", topping: "^", length: 13, stickLength: 6)
 
 
