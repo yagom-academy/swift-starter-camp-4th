@@ -8,11 +8,13 @@ import Foundation
 
 var peperoShapeLoopNum: Int = 2
 let noTopping: String = ""
+let peperoBarshape: String = " |"
+let peperobodyBlank: String = " "
 
 func makePeperoBar(length: Int) {
     for _ in 1...length {
         for _ in 1...peperoShapeLoopNum {
-            print(" |", terminator: "")
+            print(peperoBarshape, terminator: "")
         }
         print("")
     }
@@ -22,13 +24,13 @@ func makeToppingPepero(bodyLength: Int, toppingShape: String, bodyShape: String)
     let toppingPeperoLength: Int = bodyLength / 2
     for _ in 1...toppingPeperoLength {
         print(toppingShape + bodyShape)
-        print(" " + bodyShape + toppingShape)
+        print(peperobodyBlank + bodyShape + toppingShape)
     }
 }
 
 func makeNormalPepero(bodyLength: Int, bodyShape: String) {
     for _ in 1...bodyLength {
-        print(" " + bodyShape)
+        print(peperobodyBlank + bodyShape)
     }
 }
 
