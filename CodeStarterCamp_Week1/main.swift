@@ -4,47 +4,56 @@
 //
 //  Created by 김나연 on 2022/04/24.
 //
-
 import Foundation
 
+var peperoShapeLoopNum: Int = 2
+let noTopping: String = ""
 
-func makePeperoBar(peperoBarlength: Int) {
-    for _ in 1...peperoBarlength {
-        for _ in 1...2 {
+func makePeperoBar(length: Int) {
+    for _ in 1...length {
+        for _ in 1...peperoShapeLoopNum {
             print(" |", terminator: "")
         }
         print("")
     }
 }
 
-func makeToppingPepero(peperoBodylength: Int, peperoTopping: String, peperoBody: String) {
-    for _ in 1...peperoBodylength/2 {
-        print(peperoTopping + peperoBody)
-        print(" " + peperoBody + peperoTopping)
+func makeToppingPepero(bodyLength: Int, toppingShape: String, bodyShape: String) {
+    let toppingPeperoLength: Int = bodyLength / 2
+    for _ in 1...toppingPeperoLength {
+        print(toppingShape + bodyShape)
+        print(" " + bodyShape + toppingShape)
     }
 }
 
-func makeNormalPepero(peperoBodylength: Int, peperoBody: String) {
-    for _ in 1...peperoBodylength {
-        print(" " + peperoBody)
+func makeNormalPepero(bodyLength: Int, bodyShape: String) {
+    for _ in 1...bodyLength {
+        print(" " + bodyShape)
     }
 }
-func makePersonalpepero(peperoBodylength: Int, peperoBody: String, peperoTopping: String, peperoBarlength: Int) {
-    print("<정보>")
-    print("길이: \(peperoBodylength)")
-    print("몸통: \(peperoBody)")
-    print("토핑: \(peperoTopping)")
-    print("막대 길이: \(peperoBarlength)")
-    if peperoTopping == "" {
-        makeNormalPepero(peperoBodylength: peperoBodylength, peperoBody: peperoBody)
-        makePeperoBar(peperoBarlength: peperoBarlength)
+
+func peperoInfo(bodyLength: Int, bodyShape: String, toppingShape: String, barLength: Int) {
+    print("""
+<정보>
+길이: \(bodyLength)
+몸통: \(bodyShape)
+토핑: \(toppingShape)
+막대 길이: \(barLength)
+""")
+}
+
+func makePersonalpepero(bodyLength: Int, bodyShape: String, toppingShape: String, barLength: Int) {
+    peperoInfo(bodyLength: bodyLength, bodyShape: bodyShape, toppingShape: toppingShape, barLength: barLength)
+    if toppingShape == noTopping {
+        makeNormalPepero(bodyLength: bodyLength, bodyShape: bodyShape)
+        makePeperoBar(length: barLength)
     } else {
-        makeToppingPepero(peperoBodylength: peperoBodylength, peperoTopping: peperoTopping, peperoBody: peperoBody)
-        makePeperoBar(peperoBarlength: peperoBarlength)
+        makeToppingPepero(bodyLength: bodyLength, toppingShape: toppingShape, bodyShape: bodyShape)
+        makePeperoBar(length: barLength)
     }
 }
 
-makePersonalpepero(peperoBodylength: 10, peperoBody: "***", peperoTopping: "", peperoBarlength: 4)
-makePersonalpepero(peperoBodylength: 12, peperoBody: "***", peperoTopping: "&", peperoBarlength: 4)
-makePersonalpepero(peperoBodylength: 12, peperoBody: "***", peperoTopping: "#", peperoBarlength: 6)
-makePersonalpepero(peperoBodylength: 6, peperoBody: "|0|", peperoTopping: "", peperoBarlength: 4)
+makePersonalpepero(bodyLength: 10, bodyShape: "***", toppingShape: "", barLength: 4)
+makePersonalpepero(bodyLength: 12, bodyShape: "***", toppingShape: "&", barLength: 4)
+makePersonalpepero(bodyLength: 12, bodyShape: "***", toppingShape: "#", barLength: 6)
+makePersonalpepero(bodyLength: 6, bodyShape: "|0|", toppingShape: "", barLength: 4)
