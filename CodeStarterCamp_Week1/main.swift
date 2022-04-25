@@ -8,8 +8,4 @@
 
 import Foundation
 
-drawTotalIceCream1()
-drawTotalIceCream2()
-drawTotalIceCream3()
-drawTotalIceCream4()
-drawTotalIceCream_Self()
+drawTotalPepero()
