@@ -25,10 +25,10 @@ func makeIceCreamBar() {
 
 
 
-//// 두가지 함수를 한번에 호출하는 함수
-////func makeWholeIceCream() {
-////    makeIce()
-////    makeBar()
-////}
-////makeWholeIceCream()
+// 두가지 함수를 한번에 호출하는 함수
+//func makeWholeIceCream() {
+//    makeIce()
+//    makeBar()
+//}
+//makeWholeIceCream()
 //

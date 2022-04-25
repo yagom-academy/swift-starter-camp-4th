@@ -18,4 +18,14 @@ let step2 = Step2Done()
 
 let step3 = Step3Done()
 
+step3.makeWholePepero(body: "***", topping: " ", length: 10, stickLength: 4)
+
+step3.makeWholePepero(body: "***", topping: "&", length: 12, stickLength: 4)
+
+step3.makeWholePepero(body: "***", topping: "#", length: 12, stickLength: 6)
+
+step3.makeWholePepero(body: "|0|", topping: " ", length: 6, stickLength: 4)
+
 step3.makeWholePepero(body: "***", topping: "^", length: 13, stickLength: 6)
+
+

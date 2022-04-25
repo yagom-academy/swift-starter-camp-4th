@@ -9,7 +9,44 @@ import Foundation
 
 class Step3Done {
     func makeWholePepero(body: String, topping: String, length: Int, stickLength: Int) {
+     
+        printInformation(body: body, topping: topping, length: length, stickLength: stickLength)
+        makePeperoBody(body: body, topping: topping, length: length)
+        makePeperoStick(stickLength: stickLength)
+    }
+
+    func makeOddPeperoBodyLayer(body: String, topping: String) {
+        print(topping+body+" ")
+    }
+    
+    
+    func makeEvenPeperoBodyLayer(body: String, topping: String) {
+        print(" "+body+topping)
+    }
+    
+    
+    func makePeperoBody(body: String, topping: String ,length: Int) {
+        for count in 1...length {
+            if count % 2 == 1{
+            makeOddPeperoBodyLayer(body: body, topping: topping)
+            }
+            else {
+            makeEvenPeperoBodyLayer(body: body, topping: topping)
+            }
+        }
+            
+    }
+
+    func makePeperoStick(stickLength: Int) {
+        let peperoStick = " | | "
+        for _ in 1...stickLength{
+        print(peperoStick)
+        }
+    }
+    
+    func printInformation(body: String, topping: String, length: Int, stickLength: Int) {
         print("""
+    
     <정보>
     길이: \(length)
     몸통: \(body)
@@ -17,34 +54,8 @@ class Step3Done {
     막대길이: \(stickLength)
 
     """)
-        
-        makePeperoBody(pB: body, pT: topping, peperoBodyLength: length)
-        makePeperoStick(peperoStickLength: stickLength)
-    }
-
-    func makePeperoBodyLayer(peperoBody: String, peperoTopping: String) {
-        print(peperoTopping+peperoBody+" ")
-    }
-
-    func makePeperoBody(pB: String, pT: String ,peperoBodyLength: Int) {
-        for count in 1...peperoBodyLength {
-            if count % 2 == 1{
-            makePeperoBodyLayer(peperoBody: pB, peperoTopping: pT)
-            }
-            else {
-                print(" "+pB+pT)
-            }
-        }
-            
-    }
-
-    func makePeperoStick(peperoStickLength: Int) {
-        let peperoStick = " | | "
-        for _ in 1...peperoStickLength{
-        print(peperoStick)
-        }
     }
 }
-//    makeWholePepero(body: "***", topping: "@", length: 12, stickLength: 6)
+
 
 
