@@ -25,7 +25,15 @@ func drawPeperobodyLength(length: Int) {
     }
 }
 func drawTotalPepero(peperoBodyLength: Int, peperoBodyContent: String, peperoBodyToppingContent: String, peperoBarLength: Int) {
-    print("\n<정보>\n길이 : \(peperoBodyLength)\n몸통 : \(peperoBodyContent)\n토핑 : \(peperoBodyToppingContent)\n막대길이 : \(peperoBarLength)\n")
+    print("""
+
+    <정보>
+    길이 : \(peperoBodyLength)
+    몸통 : \(peperoBodyContent)
+    토핑 : \(peperoBodyToppingContent)
+    막대길이 : \(peperoBarLength)
+
+    """)
     peperobodyResult = drawPeperobodies(peperoBody: peperoBodyContent, peperoTopping: peperoBodyToppingContent)
     drawPeperobodyLength(length: peperoBodyLength)
     drawPeperobar(length: peperoBarLength)
