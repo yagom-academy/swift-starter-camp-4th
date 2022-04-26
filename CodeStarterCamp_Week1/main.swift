@@ -101,7 +101,7 @@ func printThirdStick(length: Int) {
 //길이에 따라 몸통을 그리는 함수
 
 func printThirdMainBody(high: Int) {
-    for _ in 1...high {
+    for _ in 1...high/2 {
         printThirdBody(body: thirdBody, topping: thirdToping)
     }
 }
