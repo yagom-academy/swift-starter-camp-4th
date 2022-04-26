@@ -37,19 +37,18 @@ func drawPeperoStick() {
 }
 
 // 빼뺴로 몸통 그리기_(2)
-func drawPeperoLayer() {
-    print(layer1+"\n"+layer2)
+func drawPeperoLayer(peperoBodyShape: String, peperoTopping: String) -> String {
+    return peperoTopping+peperoBodyShape+"\n"+" "+peperoBodyShape+peperoTopping
 }
 
 // 빼빼로 몸통 그리기_(3)
 func drawPeperoBody() {
-    // 2줄 단위로 나누어 몸통 출력
     for _ in 1...peperoBodyLength / 2 {
-        drawPeperoLayer()
+        print(drawPeperoLayer(peperoBodyShape: peperoBodyShape, peperoTopping: peperoTopping))
     }
     // 빼빼로 몸통 길이가 홀수일 때 출력
     if peperoBodyLength % 2 == 1 {
-        print(layer1)
+        print(peperoTopping+peperoBodyShape)
     }
 }
 
