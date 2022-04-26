@@ -8,24 +8,8 @@
 
 import Foundation
 
-func drawIceCream() {
-    for iceCreamDot in 1...11 {
-        print("*",terminator:"")
-    }
-    print()
-}
-func drawIceCreamBar() {
-        print("\t| | \t")
-    }
-func drawTotalIceCream() {
-    for iceCream in 1...8 {
-        drawIceCream()
-    }
-    for iceCreamBar in 1...4 {
-        drawIceCreamBar()
-    }
-}
-drawTotalIceCream()
-
-
-
+drawTotalPepero(peperoBodyLength: 10, peperoBodyContent: " ***", peperoBodyToppingContent: " ", peperoBarLength: 4)
+drawTotalPepero(peperoBodyLength: 12, peperoBodyContent: " ***", peperoBodyToppingContent: "&", peperoBarLength: 4)
+drawTotalPepero(peperoBodyLength: 12, peperoBodyContent: " ***", peperoBodyToppingContent: "#", peperoBarLength: 6)
+drawTotalPepero(peperoBodyLength: 6, peperoBodyContent: " |0|", peperoBodyToppingContent: " ", peperoBarLength: 4)
+drawTotalPepero(peperoBodyLength: 8, peperoBodyContent: " /9/", peperoBodyToppingContent: " ", peperoBarLength: 5)
