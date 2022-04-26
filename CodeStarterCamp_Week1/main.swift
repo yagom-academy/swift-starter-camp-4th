@@ -6,14 +6,15 @@
 //
 import Foundation
 
-var peperoShapeLoopNum: Int = 2
 let noTopping: String = ""
 let peperoBarshape: String = " |"
 let peperobodyBlank: String = " "
 
 func makePeperoBar(length: Int) {
+    let peperowedth: Int = 2
+    
     for _ in 1...length {
-        for _ in 1...peperoShapeLoopNum {
+        for _ in 1...peperowedth {
             print(peperoBarshape, terminator: "")
         }
         print("")
@@ -22,6 +23,7 @@ func makePeperoBar(length: Int) {
 
 func makeToppingPepero(bodyLength: Int, toppingShape: String, bodyShape: String) {
     let toppingPeperoLength: Int = bodyLength / 2
+    
     for _ in 1...toppingPeperoLength {
         print(toppingShape + bodyShape)
         print(peperobodyBlank + bodyShape + toppingShape)
@@ -36,16 +38,17 @@ func makeNormalPepero(bodyLength: Int, bodyShape: String) {
 
 func peperoInfo(bodyLength: Int, bodyShape: String, toppingShape: String, barLength: Int) {
     print("""
-<정보>
-길이: \(bodyLength)
-몸통: \(bodyShape)
-토핑: \(toppingShape)
-막대 길이: \(barLength)
-""")
+        <정보>
+        길이: \(bodyLength)
+        몸통: \(bodyShape)
+        토핑: \(toppingShape)
+        막대 길이: \(barLength)
+    """)
 }
 
 func makePersonalpepero(bodyLength: Int, bodyShape: String, toppingShape: String, barLength: Int) {
     peperoInfo(bodyLength: bodyLength, bodyShape: bodyShape, toppingShape: toppingShape, barLength: barLength)
+    
     if toppingShape == noTopping {
         makeNormalPepero(bodyLength: bodyLength, bodyShape: bodyShape)
         makePeperoBar(length: barLength)
