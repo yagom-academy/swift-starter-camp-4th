@@ -1,38 +1,64 @@
 //
-//  main.swift
+//  makepepero.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by 김나연 on 2022/04/24.
 //
-
 import Foundation
 
-func makeIcecreamBody() {
-    for _ in 1...8{
-        for _ in 1...11 {
-            print("*", terminator: "")
+let noTopping: String = ""
+let peperoBarshape: String = " |"
+let peperobodyBlank: String = " "
+
+func makePeperoBar(length: Int) {
+    let peperowedth: Int = 2
+    
+    for _ in 1...length {
+        for _ in 1...peperowedth {
+            print(peperoBarshape, terminator: "")
         }
         print("")
     }
 }
 
-func makeIcecreamBar() {
-    for _ in 1...4 {
-        for _ in 1...4 {
-            print(" ", terminator: "")
-        }
-        print("| |")
+func makeToppingPepero(bodyLength: Int, toppingShape: String, bodyShape: String) {
+    let toppingPeperoLength: Int = bodyLength / 2
+    
+    for _ in 1...toppingPeperoLength {
+        print(toppingShape + bodyShape)
+        print(peperobodyBlank + bodyShape + toppingShape)
     }
 }
 
-makeIcecreamBody()
-makeIcecreamBar()
-
-func makeGugudan(xdan: Int) {
-    for i in 1...9 {
-        print("\(xdan) x \(i) = \(xdan * i)")
+func makeNormalPepero(bodyLength: Int, bodyShape: String) {
+    for _ in 1...bodyLength {
+        print(peperobodyBlank + bodyShape)
     }
 }
 
-makeGugudan(xdan: 3)
+func peperoInfo(bodyLength: Int, bodyShape: String, toppingShape: String, barLength: Int) {
+    print("""
+        <정보>
+        길이: \(bodyLength)
+        몸통: \(bodyShape)
+        토핑: \(toppingShape)
+        막대 길이: \(barLength)
+    """)
+}
+
+func makePersonalpepero(bodyLength: Int, bodyShape: String, toppingShape: String, barLength: Int) {
+    peperoInfo(bodyLength: bodyLength, bodyShape: bodyShape, toppingShape: toppingShape, barLength: barLength)
+    
+    if toppingShape == noTopping {
+        makeNormalPepero(bodyLength: bodyLength, bodyShape: bodyShape)
+        makePeperoBar(length: barLength)
+    } else {
+        makeToppingPepero(bodyLength: bodyLength, toppingShape: toppingShape, bodyShape: bodyShape)
+        makePeperoBar(length: barLength)
+    }
+}
+
+makePersonalpepero(bodyLength: 10, bodyShape: "***", toppingShape: "", barLength: 4)
+makePersonalpepero(bodyLength: 12, bodyShape: "***", toppingShape: "&", barLength: 4)
+makePersonalpepero(bodyLength: 12, bodyShape: "***", toppingShape: "#", barLength: 6)
+makePersonalpepero(bodyLength: 6, bodyShape: "|0|", toppingShape: "", barLength: 4)
