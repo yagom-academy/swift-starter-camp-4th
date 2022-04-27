@@ -21,8 +21,6 @@ var peperoTopping = readLine()!
 print("막대길이: ", terminator: "")
 var peperoStickLength = Int(readLine()!)!
 
-let layer1 = String(peperoTopping+peperoBodyShape)
-let layer2 = String(" "+peperoBodyShape+peperoTopping)
 
 // 빼빼로 막대 그리는 함수_(1)
 func drawPeperoStick() {
@@ -37,14 +35,14 @@ func drawPeperoStick() {
 }
 
 // 빼뺴로 몸통 그리기_(2)
-func drawPeperoLayer(peperoBodyShape: String, peperoTopping: String) -> String {
-    return peperoTopping+peperoBodyShape+"\n"+" "+peperoBodyShape+peperoTopping
+func drawPeperoLayer(bodyShape: String, topping: String) -> String {
+    return peperoTopping+peperoBodyShape + "\n" + " " + peperoBodyShape+peperoTopping
 }
 
 // 빼빼로 몸통 그리기_(3)
 func drawPeperoBody() {
     for _ in 1...peperoBodyLength / 2 {
-        print(drawPeperoLayer(peperoBodyShape: peperoBodyShape, peperoTopping: peperoTopping))
+        print(drawPeperoLayer(bodyShape: peperoBodyShape, topping: peperoTopping))
     }
     // 빼빼로 몸통 길이가 홀수일 때 출력
     if peperoBodyLength % 2 == 1 {
