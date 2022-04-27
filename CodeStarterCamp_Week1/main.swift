@@ -35,11 +35,6 @@ func printStick() {
 }
 
 func printBodyandTopping() {
-    print(topping + body)
-    print(" " + body + topping)
-}
-
-func drawBodyandTopping() {
     print("\(topping)\(body)")
     print(" \(body)\(topping)")
 }
