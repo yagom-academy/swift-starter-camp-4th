@@ -21,3 +21,30 @@ func printPpePpeRoStick(length: Int, stick: String , space: String) {
     }
     print("                         ")
 }
+
+func printFirstPpePpeRo() {
+    printPpePpeRoBody(high: 10, body: "***", toping: " ")
+    printPpePpeRoStick(length: 4, stick: "| |", space: " ")
+}
+
+func printSeceondPpePpeRo() {
+    printPpePpeRoBody(high: 12, body: "***", toping: "&")
+    printPpePpeRoStick(length: 4, stick: "| |", space: " ")
+}
+
+func printThirdPpePpeRo() {
+    printPpePpeRoBody(high: 12, body: "***", toping: "#")
+    printPpePpeRoStick(length: 6, stick: "| |", space: " ")
+}
+
+func printFourPpePpeRo() {
+    printPpePpeRoBody(high: 6, body: "|0|", toping: " ")
+    printPpePpeRoStick(length: 4, stick: "| |", space: " ")
+}
+
+func printAllPpePpeRo() {
+    printFirstPpePpeRo()
+    printSeceondPpePpeRo()
+    printThirdPpePpeRo()
+    printFourPpePpeRo()
+}
