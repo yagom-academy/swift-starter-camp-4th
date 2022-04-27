@@ -13,7 +13,7 @@ let firstBody: String = "***"
 let firstStick: String = "| |"
 let firstStickHigh: Int = 4
 let bodyHigh: Int = 10
-let firstToping: String = ""
+let firstToping: String = " "
 
 func printPpePpeRoStick(length: Int, stick: String) {
     for _ in 1...length {
@@ -64,41 +64,30 @@ func seceondPpePpeRo() {
 
 
 //--------------------------------------------------------------------------------
-//세번째 빼빼로
+
 let thirdBody: String = "***"
 let thirdStick: String = "| |"
 let thirdStickHigh: Int = 4
 let thirdBodyHigh: Int = 12
 let thirdToping: String = "#"
 
-//몸통과 토핑을 매개변수로 받아 몸통을 그리는 함수
-
-func printThirdBody(body: String, topping: String) {
-    print(
-        "\(topping)\(body)\n \(body)\(topping)",
-          separator: ""
-    )
-}
-
-//길이에 따른 막대를 그리는 함수
-
-func printThirdStick(length: Int) {
+func printThirdPpePpeRoStick(length: Int, stick: String) {
     for _ in 1...length {
-        print(" \(thirdStick)")
+        print(" \(stick)")
     }
 }
 
-//길이에 따라 몸통을 그리는 함수
-
-func printThirdMainBody(high: Int) {
+func printThirdPpePpeRoBody(high: Int, body: String, toping: String) {
     for _ in 1...high/2 {
-        printThirdBody(body: thirdBody, topping: thirdToping)
+        print("\(toping)\(body)\n \(body)\(toping)",
+              separator: ""
+        )
     }
 }
 
 func thirdPpePpeRo() {
-    printThirdMainBody(high: thirdBodyHigh)
-    printThirdStick(length: thirdStickHigh)
+    printThirdPpePpeRoBody(high: thirdBodyHigh, body: thirdBody, toping: thirdToping)
+    printThirdPpePpeRoStick(length: thirdStickHigh, stick: thirdStick)
 }
 
 //------------------------------------------------------------------------------------------
@@ -109,33 +98,21 @@ let fourBody: String = "|0|"
 let fourStick: String = "| |"
 let fourStickHigh: Int = 4
 let fourBodyHigh: Int = 6
-let fourToping: String = ""
+let fourToping: String = " "
 
-
-//몸통과 토핑을 매개변수로 받아 몸통을 그리는 함수
-
-func printFourBody(body: String, toping: String) {
-    print("\(toping)\(body)")
-}
-
-//길이에 따른 막대를 그리는 함수
-
-func printFourStick(length: Int) {
+func printFourPpePpeRoStick(length: Int, stick: String) {
     for _ in 1...length {
-        print(" \(fourStick)")
+        print(" \(stick)")
     }
 }
 
-//길이에 따라 몸통을 그리는 함수
-
-func printFourMainBody(high: Int) {
+func printFourPpePpeRoBody(high: Int, body: String, toping: String) {
     for _ in 1...high {
-        printFourBody(body: fourBody, toping: fourToping)
+        print("\(toping)\(body)")
     }
 }
 
 func fourPpePpeRo() {
-    printFourMainBody(high: fourBodyHigh)
-        printFourStick(length: fourStickHigh)
+    printFourPpePpeRoBody(high: fourBodyHigh, body: fourBody, toping: fourToping)
+    printFourPpePpeRoStick(length: fourStickHigh, stick: fourStick)
 }
-
