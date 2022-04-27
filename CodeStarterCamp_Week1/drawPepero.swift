@@ -7,6 +7,14 @@
 
 import Foundation
 
+func printInfo(bodyLength: Int, body: String, toping: String, stickLength: Int) {
+    print("<정보>")
+    print("길이: \(bodyLength)")
+    print("몸통: \(body)")
+    print("토핑: \(toping)")
+    print("막대길이: \(stickLength)")
+}
+
 func drawStick(length: Int) {
     for _ in 1...length {
         print(" | |")
@@ -32,6 +40,7 @@ func drawBodyStick(body: String, toping: String, length: Int) {
 }
 
 func drawPepero(bodyLength: Int, body: String, toping: String, stickLength: Int) {
+    printInfo(bodyLength: bodyLength, body: body, toping: toping, stickLength: stickLength)
     drawBodyStick(body: body, toping: toping, length: bodyLength)
     drawStick(length: stickLength)
 }
