@@ -15,29 +15,23 @@ let firstStickHigh: Int = 4
 let bodyHigh: Int = 10
 let firstToping: String = ""
 
-//몸통과 토핑을 매개변수로 받아 몸통을 그리는 함수
-func printFirstBody(body: String, toping: String) {
-    print("\(toping) \(body)")
-}
-
-//길이에 따른 막대를 그리는 함수
-func printFirstStick(length: Int) {
+func printPpePpeRoStick(length: Int, stick: String) {
     for _ in 1...length {
-        print(" \(firstStick)")
+        print(" \(stick)")
     }
 }
 
-//길이에 따라 몸통을 그리는 함수
-func printMainBody(high: Int) {
+func printMainBody(high: Int, body: String, toping: String) {
     for _ in 1...high {
-        printFirstBody(body: firstBody, toping: firstToping)
+        print("\(toping)\(body)")
     }
 }
 
 func firstPpePpeRo() {
-    printMainBody(high: bodyHigh)
-        printFirstStick(length: firstStickHigh)
+    printMainBody(high: bodyHigh, body: firstBody, toping: firstToping)
+        printPpePpeRoStick(length: firstStickHigh, stick: firstStick)
 }
+
 
 //----------------------------------------------------------------------------------------
 
