@@ -6,10 +6,4 @@
 
 import Foundation
 
-firstPpePpeRo()
-
-seceondPpePpeRo()
-
-thirdPpePpeRo()
-
-fourPpePpeRo()
+printAllPpePpeRo()
