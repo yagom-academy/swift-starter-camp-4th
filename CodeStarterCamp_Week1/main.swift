@@ -13,6 +13,7 @@ class Pepero {
     var topping: String
     var stickHeight: Int
     let stickBody: String = " | |"
+    
     init(bodyHeight: Int, body: String, topping: String, stickHeight: Int) {
         self.bodyHeight = bodyHeight
         self.body = body
@@ -70,17 +71,17 @@ class Pepero {
 }
 
 
-var starPepero = Pepero(bodyHeight: 10, body: "***", topping: "", stickHeight: 4)
+let starPepero = Pepero(bodyHeight: 10, body: "***", topping: "", stickHeight: 4)
 starPepero.makePepero()
 
-var ampersandPepero = Pepero(bodyHeight: 12, body: "***", topping: "&", stickHeight: 4)
+let ampersandPepero = Pepero(bodyHeight: 12, body: "***", topping: "&", stickHeight: 4)
 ampersandPepero.makePepero()
 
-var sharpPepero = Pepero(bodyHeight: 12, body: "***", topping: "#", stickHeight: 6)
+let sharpPepero = Pepero(bodyHeight: 12, body: "***", topping: "#", stickHeight: 6)
 sharpPepero.makePepero()
 
-var nudePepero = Pepero(bodyHeight: 6, body: "|0|", topping: "", stickHeight: 4)
+let nudePepero = Pepero(bodyHeight: 6, body: "|0|", topping: "", stickHeight: 4)
 nudePepero.makePepero()
 
-var myPepero = Pepero(bodyHeight: 8, body: "***", topping: "$", stickHeight: 3)
+let myPepero = Pepero(bodyHeight: 8, body: "***", topping: "$", stickHeight: 3)
 myPepero.makePepero()
