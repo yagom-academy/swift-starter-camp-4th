@@ -7,61 +7,61 @@
 
 import Foundation
 
-var chocoBody: String = ""
-
 // MARK: - 빼빼로 바디 만들기
 
-func makePeperoBody(peperoBody: String, peperoTopping: String) {
-    if peperoTopping.isEmpty {
-        chocoBody = " " + peperoBody
+func makePeperoBody(bodyContent: String, topping: String) -> String {
+    var chocoBody: String = ""
+    
+    if topping.isEmpty {
+        chocoBody = " \(topping)\(bodyContent)"
     } else {
-        chocoBody = peperoTopping + peperoBody
+        chocoBody = "\(topping)\(bodyContent)"
     }
+    return chocoBody
 }
 
 // MARK: - 빼빼로 바디길이
 
-func makePeperoBodyLength(peperoBodyLength: Int) {
-    for i in 1...peperoBodyLength {
+func makePeperoBodyLength(bodyContent: String, topping: String, bodyLength: Int) {
+    for i in 1...bodyLength {
         if i % 2 == 0 {
-            print(" " + chocoBody.reversed())
+            print(" \(bodyContent)\(topping)")
         } else {
-            print(chocoBody)
+            print("\(topping)\(bodyContent)")
         }
-        print("")
     }
 }
 
 // MARK: - 빼빼로 스틱 만들기
 
-func makePeperoStick(peperoStickLength: Int) {
-    for _ in 1...peperoStickLength {
-        print(" | |\n")
+func makePeperoStick(stickLength: Int) {
+    for _ in 1...stickLength {
+        print(" | |")
     }
 }
 
 // MARK: - 빼빼로 정보 + 호출 함수
 
-func makeVarietyPepero(peperoBody: String, peperoTopping: String, peperoBodyLength: Int, peperoStickLength: Int) {
+func makeVarietyPepero(bodyContent: String, topping: String, bodyLength: Int, stickLength: Int) {
     print("""
- <정보>
- 길이: \(peperoBodyLength)
- 몸통: \(peperoBody)
- 토핑: \(peperoTopping)
- 막대길이: \(peperoStickLength)
+ \n <정보>
+ 길이: \(bodyLength)
+ 몸통: \(bodyContent)
+ 토핑: \(topping)
+ 막대길이: \(stickLength)
 
 """)
-    makePeperoBody(peperoBody: peperoBody, peperoTopping: peperoTopping)
-    makePeperoBodyLength(peperoBodyLength: peperoBodyLength)
-    makePeperoStick(peperoStickLength: peperoStickLength)
+    makePeperoBody(bodyContent: bodyContent, topping: topping)
+    makePeperoBodyLength(bodyContent: bodyContent, topping: topping, bodyLength: bodyLength)
+    makePeperoStick(stickLength: stickLength)
 }
 
 // MARK: - 빼빼로 호출 + 나만의 빼빼로 만들기
 
-makeVarietyPepero(peperoBody: "***", peperoTopping: "", peperoBodyLength: 10, peperoStickLength: 4)
-makeVarietyPepero(peperoBody: "***", peperoTopping: "&", peperoBodyLength: 12, peperoStickLength: 4)
-makeVarietyPepero(peperoBody: "***", peperoTopping: "#", peperoBodyLength: 12, peperoStickLength: 6)
-makeVarietyPepero(peperoBody: "|0|", peperoTopping: "", peperoBodyLength: 6, peperoStickLength: 4)
-makeVarietyPepero(peperoBody: "|0|", peperoTopping: "≀", peperoBodyLength: 10, peperoStickLength: 4)
+makeVarietyPepero(bodyContent: "***", topping: " ", bodyLength: 10, stickLength: 4)
+makeVarietyPepero(bodyContent: "***", topping: "&", bodyLength: 12, stickLength: 4)
+makeVarietyPepero(bodyContent: "***", topping: "#", bodyLength: 12, stickLength: 6)
+makeVarietyPepero(bodyContent: "|0|", topping: " ", bodyLength: 6, stickLength: 4)
+makeVarietyPepero(bodyContent: "|0|", topping: "≀", bodyLength: 10, stickLength: 4)
 
 
