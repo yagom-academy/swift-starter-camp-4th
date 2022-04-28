@@ -7,41 +7,57 @@
 //
 import Foundation
 
-func makeIceCream(iceWidth: Int, iceHeight: Int) {
-    for _ in 1...iceHeight {
-        for _ in 1...iceWidth {
-            print("*",terminator: "")
+print("""
+---------------------------------------------
+ ♥︎  빼빼로 종류(type): basic | nude
+ ♥︎  빼빼로 토핑(option): none | crunch | almond
+---------------------------------------------
+""")
+
+let (basic, nude) = ("***", "|0|")
+let (none, crunch, almond) = (" ", "#", "&")
+
+func buildFinalPepero(order peperoType: String, with peperoOption: String, size peperoLength: (choco: Int, stick: Int)){
+    print("""
+    <정보>
+    길이: \(peperoLength.choco)
+    몸통: \(peperoType)
+    토핑: \(peperoOption)
+    막대길이: \(peperoLength.stick)
+    
+    """)
+    makePeperoBody(type: peperoType, option: peperoOption, length: peperoLength)
+    makePeperoStick(length: peperoLength)
+    print("\n")
+}
+
+func makePeperoBody(type peperoType: String, option peperoOption: String, length peperoLength: (choco: Int, stick: Int)) {
+    if peperoLength.choco % 2 == 0 {
+        for _ in 1...peperoLength.choco / 2 {
+            mergeOptions(type: peperoType, option: peperoOption)
         }
-        print()
+    }
+    else if peperoLength.choco % 2 != 0 {
+        for _ in 1...peperoLength.choco / 2 {
+            mergeOptions(type: peperoType, option: peperoOption)
+        }
+        print(peperoOption + peperoType + " ")
     }
 }
 
-func makeIceStick(iceWidth: Int) {
-    let i: Int = (iceWidth - 3) / 2
-    if iceWidth % 2 == 0 {
-        for _ in 1...4 {
-            for _ in 1...i {
-                print(" ",terminator: "")
-            }
-            print("|  |",terminator: "")
-            for _ in 1...i {
-                print(" ",terminator: "")
-            }
-            print()
-        }
-        } else {
-        for _ in 1...4 {
-            for _ in 1...i {
-                print(" ",terminator: "")
-            }
-            print("| |",terminator: "")
-            for _ in 1...i {
-                print(" ",terminator: "")
-            }
-            print()
-        }
-        }
-} 
+func mergeOptions(type peperoType: String, option peperoOption: String) {
+    let oddBody = peperoOption + peperoType + " "
+    let evenBody = " " + peperoType + peperoOption
+    print(oddBody, evenBody, separator: "\n")
+}
 
-makeIceCream(iceWidth: 11, iceHeight: 8)    //아이스크림 부분을 그리는 함수
-makeIceStick(iceWidth: 11)                  //막대기(손잡이) 부분을 그리는 함수
+func makePeperoStick(length peperoLength: (choco: Int, stick: Int)) {
+    for _ in 1...peperoLength.stick {
+        print(" | | ")
+    }
+}
+
+buildFinalPepero(order: basic, with: none, size: (choco: 10, stick: 4))   //실행 예시 1
+buildFinalPepero(order: basic, with: almond, size: (choco: 12, stick: 4)) //실행 예시 2
+buildFinalPepero(order: basic, with: crunch, size: (choco: 12, stick: 6)) //실행 예시 3
+buildFinalPepero(order: nude, with: none, size: (choco: 6, stick: 4))     //실행 예시 4
