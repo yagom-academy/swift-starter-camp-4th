@@ -13,6 +13,7 @@ func printInfo(bodyLength: Int, body: String, toping: String, stickLength: Int) 
     print("몸통: \(body)")
     print("토핑: \(toping)")
     print("막대길이: \(stickLength)")
+    print("\n")
 }
 
 func drawStick(length: Int) {
@@ -43,4 +44,5 @@ func drawPepero(bodyLength: Int, body: String, toping: String, stickLength: Int)
     printInfo(bodyLength: bodyLength, body: body, toping: toping, stickLength: stickLength)
     drawBodyStick(body: body, toping: toping, length: bodyLength)
     drawStick(length: stickLength)
+    print("\n")
 }
