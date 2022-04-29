@@ -14,12 +14,11 @@ func printIce(makeStar: String) {
     for _ in 1...8 {
             for _ in 1...11 {
                 print("\(makeStar)", terminator: "")
-                
+
 }
         print("\n", terminator: "")
     }
 }
-printIce(makeStar: star)
 
 func printStick(makeStick: String) {
     for _ in 1...4 {
@@ -27,4 +26,3 @@ func printStick(makeStick: String) {
     }
 }
 
-printStick(makeStick: stick)
