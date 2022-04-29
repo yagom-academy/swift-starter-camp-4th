@@ -15,7 +15,7 @@ func printPpePpeRoBody(high: Int, body: String, toping: String) {
     }
 }
 
-func printPpePpeRoStick(length: Int, stick: String , space: String) {
+func printPpePpeRoStick(length: Int, stick: String) {
     for _ in 1...length {
         print(" \(stick)")
     }
@@ -24,22 +24,22 @@ func printPpePpeRoStick(length: Int, stick: String , space: String) {
 
 func printFirstPpePpeRo() {
     printPpePpeRoBody(high: 10, body: "***", toping: " ")
-    printPpePpeRoStick(length: 4, stick: "| |", space: " ")
+    printPpePpeRoStick(length: 4, stick: "| |")
 }
 
 func printSeceondPpePpeRo() {
     printPpePpeRoBody(high: 12, body: "***", toping: "&")
-    printPpePpeRoStick(length: 4, stick: "| |", space: " ")
+    printPpePpeRoStick(length: 4, stick: "| |")
 }
 
 func printThirdPpePpeRo() {
     printPpePpeRoBody(high: 12, body: "***", toping: "#")
-    printPpePpeRoStick(length: 6, stick: "| |", space: " ")
+    printPpePpeRoStick(length: 6, stick: "| |")
 }
 
 func printFourPpePpeRo() {
     printPpePpeRoBody(high: 6, body: "|0|", toping: " ")
-    printPpePpeRoStick(length: 4, stick: "| |", space: " ")
+    printPpePpeRoStick(length: 4, stick: "| |")
 }
 
 func printAllPpePpeRo() {
