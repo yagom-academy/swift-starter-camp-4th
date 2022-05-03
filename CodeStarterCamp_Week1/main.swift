@@ -14,4 +14,12 @@ func printIce() {
     }
 }
 
+func printStick() {
+    for _ in 1...4 {
+        print("    | |    ")
+    }
+}
+
 printIce()
+printStick()
+
