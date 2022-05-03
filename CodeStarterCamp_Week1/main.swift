@@ -8,5 +8,10 @@
 
 import Foundation
 
-print("Hello, World!")
+func printIce() {
+    for _ in 1...8 {
+        print("***********")
+    }
+}
 
+printIce()
