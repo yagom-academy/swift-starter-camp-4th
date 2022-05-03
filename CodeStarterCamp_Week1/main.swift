@@ -8,18 +8,27 @@
 
 import Foundation
 
-func printIce() {
-    for _ in 1...8 {
-        print("***********")
+let ice: String = "*"
+let bar: String = "|"
+
+func printIcecream(iceHeight: Int, stickLength: Int){
+    Icecream(height: iceHeight)
+    stick(length: stickLength)
+}
+
+func Icecream(height: Int) {
+    for _ in 1...height {
+        for _ in 1...11 {
+            print("\(ice)", terminator: "")
+        }
+        print("")
     }
 }
 
-func printStick() {
+func stick(length: Int) {
     for _ in 1...4 {
-        print("    | |    ")
+        print("    \(bar) \(bar)")
     }
 }
 
-printIce()
-printStick()
-
+printIcecream(iceHeight: 8, stickLength: 4)
