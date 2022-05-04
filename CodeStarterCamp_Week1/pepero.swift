@@ -14,3 +14,12 @@ func printStick(length: Int) {
         print(" \(bar) \(bar)")
     }
 }
+
+func printInfo(shape: String, height: Int, topping: String, lenght: Int) {
+    print("<정보>")
+    print("길이: \(height)")
+    print("몸통: \(shape)")
+    print("토핑: \(topping)")
+    print("막대길이: \(lenght)")
+    print("\n")
+}
