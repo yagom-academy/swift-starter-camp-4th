@@ -30,3 +30,12 @@ func printBody(bodyShape: String, bodyHeight: Int, toppings: String) {
         print(" \(bodyShape)\(toppings)")
     }
 }
+
+func makePepero(peperoShape: String, peperoHeight: Int, peperoTopping: String, stickLength: Int) {
+    printInfo(shape: peperoShape,
+              height: peperoHeight,
+              topping: peperoTopping,
+              lenght: stickLength)
+    printBody(bodyShape: peperoShape, bodyHeight: peperoHeight, toppings: peperoTopping)
+    printStick(length: stickLength)
+}
