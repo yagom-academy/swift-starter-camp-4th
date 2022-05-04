@@ -23,3 +23,10 @@ func printInfo(shape: String, height: Int, topping: String, lenght: Int) {
     print("막대길이: \(lenght)")
     print("\n")
 }
+
+func printBody(bodyShape: String, bodyHeight: Int, toppings: String) {
+    for _ in 1...bodyHeight/2 {
+        print("\(toppings)\(bodyShape)")
+        print(" \(bodyShape)\(toppings)")
+    }
+}
