@@ -7,21 +7,22 @@
 
 import Foundation
 
-let bar: String = "|"
-
 func printStick(length: Int) {
+    let bar: String = " | |"
     for _ in 1...length {
-        print(" \(bar) \(bar)")
+        print("\(bar)")
     }
 }
 
-func printInfo(shape: String, height: Int, topping: String, lenght: Int) {
-    print("<정보>")
-    print("길이: \(height)")
-    print("몸통: \(shape)")
-    print("토핑: \(topping)")
-    print("막대길이: \(lenght)")
-    print("\n")
+func printInfo(shape: String, height: Int, topping: String, length: Int) {
+    print("""
+<정보>
+길이: \(height)
+몸통: \(shape)
+토핑: \(topping)
+막대길이: \(length)
+\n
+""")
 }
 
 func printBody(bodyShape: String, bodyHeight: Int, toppings: String) {
@@ -32,10 +33,7 @@ func printBody(bodyShape: String, bodyHeight: Int, toppings: String) {
 }
 
 func makePepero(peperoShape: String, peperoHeight: Int, peperoTopping: String, stickLength: Int) {
-    printInfo(shape: peperoShape,
-              height: peperoHeight,
-              topping: peperoTopping,
-              lenght: stickLength)
+    printInfo(shape: peperoShape, height: peperoHeight,topping: peperoTopping, length: stickLength)
     printBody(bodyShape: peperoShape, bodyHeight: peperoHeight, toppings: peperoTopping)
     printStick(length: stickLength)
 }
