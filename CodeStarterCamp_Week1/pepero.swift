@@ -10,7 +10,7 @@ import Foundation
 func makePepero(peperoShape: String, peperoHeight: Int, peperoTopping: String, stickLength: Int) {
     printInfo(shape: peperoShape, height: peperoHeight,topping: peperoTopping, length: stickLength)
     printBody(bodyShape: peperoShape, bodyHeight: peperoHeight, toppings: peperoTopping)
-    printStick(length: stickLength)
+    printStick(length: stickLength, blank: peperoTopping.count)
 }
 
 func printInfo(shape: String, height: Int, topping: String, length: Int) {
@@ -45,9 +45,9 @@ func printBlank(count: Int) {
     }
 }
 
-func printStick(length: Int) {
-    let bar: String = " | |"
+func printStick(length: Int, blank: Int) {
+    let bar: String = "|"
     for _ in 1...length {
-        print("\(bar)")
+        printBlank(count: blank); print("\(bar) \(bar)")
     }
 }
