@@ -7,11 +7,10 @@
 
 import Foundation
 
-func printStick(length: Int) {
-    let bar: String = " | |"
-    for _ in 1...length {
-        print("\(bar)")
-    }
+func makePepero(peperoShape: String, peperoHeight: Int, peperoTopping: String, stickLength: Int) {
+    printInfo(shape: peperoShape, height: peperoHeight,topping: peperoTopping, length: stickLength)
+    printBody(bodyShape: peperoShape, bodyHeight: peperoHeight, toppings: peperoTopping)
+    printStick(length: stickLength)
 }
 
 func printInfo(shape: String, height: Int, topping: String, length: Int) {
@@ -26,14 +25,29 @@ func printInfo(shape: String, height: Int, topping: String, length: Int) {
 }
 
 func printBody(bodyShape: String, bodyHeight: Int, toppings: String) {
-    for _ in 1...bodyHeight/2 {
+    if bodyHeight/2 == 0 {
+        for _ in 1...bodyHeight/2 {
+            print("\(toppings)\(bodyShape)")
+            printBlank(count: toppings.count); print(" \(bodyShape)\(toppings)")
+        }
+    }else{
+        for _ in 1...bodyHeight/2 {
+            print(toppings + bodyShape)
+            printBlank(count: toppings.count); print(bodyShape + toppings)
+        }
         print("\(toppings)\(bodyShape)")
-        print(" \(bodyShape)\(toppings)")
     }
 }
 
-func makePepero(peperoShape: String, peperoHeight: Int, peperoTopping: String, stickLength: Int) {
-    printInfo(shape: peperoShape, height: peperoHeight,topping: peperoTopping, length: stickLength)
-    printBody(bodyShape: peperoShape, bodyHeight: peperoHeight, toppings: peperoTopping)
-    printStick(length: stickLength)
+func printBlank(count: Int) {
+    for _ in 1...count {
+        print(" ", terminator: "")
+    }
+}
+
+func printStick(length: Int) {
+    let bar: String = " | |"
+    for _ in 1...length {
+        print("\(bar)")
+    }
 }
