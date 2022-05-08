@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+/*
 let ice: String = "*"
 let bar: String = "|"
 
@@ -32,3 +32,10 @@ func stick(length: Int) {
 }
 
 printIcecream(iceHeight: 8, stickLength: 4)
+*/
+
+makePepero(peperoShape: "***", peperoHeight: 10, peperoTopping: " ", stickLength: 4)
+makePepero(peperoShape: "***", peperoHeight: 12, peperoTopping: "&", stickLength: 4)
+makePepero(peperoShape: "***", peperoHeight: 12, peperoTopping: "#", stickLength: 6)
+makePepero(peperoShape: "|0|", peperoHeight: 6, peperoTopping: " ", stickLength: 4)
+makePepero(peperoShape: "$$$", peperoHeight: 8, peperoTopping: " ", stickLength: 4)
