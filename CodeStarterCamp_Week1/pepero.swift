@@ -28,12 +28,14 @@ func printBody(bodyShape: String, bodyHeight: Int, toppings: String) {
     if bodyHeight/2 == 0 {
         for _ in 1...bodyHeight/2 {
             print("\(toppings)\(bodyShape)")
-            printBlank(count: toppings.count); print(" \(bodyShape)\(toppings)")
+            printBlank(count: toppings.count)
+            print(" \(bodyShape)\(toppings)")
         }
-    }else{
+    } else {
         for _ in 1...bodyHeight/2 {
             print(toppings + bodyShape)
-            printBlank(count: toppings.count); print(bodyShape + toppings)
+            printBlank(count: toppings.count)
+            print(bodyShape + toppings)
         }
         print("\(toppings)\(bodyShape)")
     }
